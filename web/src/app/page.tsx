@@ -16,7 +16,7 @@ export default function Home() {
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.1, backgroundImage: 'url("/images/puzzle-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         
         <div className="container text-center" style={{ position: 'relative', zIndex: 10 }}>
-          <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem', background: 'linear-gradient(to right, #f8fafc, var(--primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem', background: 'linear-gradient(to right, var(--text-main), var(--primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             ANATOLİAN’I SEVİYORUZ<br />
             PUZZLE HIZ YARIŞMASI
           </h1>
@@ -50,11 +50,11 @@ export default function Home() {
             alignItems: 'center',
             opacity: 0.7
           }}>
-            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Özensan</div>
-            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Heye</div>
-            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Torium</div>
-            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Hobby Galeri</div>
-            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Takvim</div>
+            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Özensan</div>
+            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Heye</div>
+            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Torium</div>
+            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Hobby Galeri</div>
+            <div style={{ width: '150px', height: '60px', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Takvim</div>
           </div>
         </div>
       </section>

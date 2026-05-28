@@ -15,6 +15,7 @@ export default function Navbar() {
             <li><Link href="/kurallar">Kurallar</Link></li>
             <li><Link href="/gecmis-yarismalar">Geçmiş Yarışmalar</Link></li>
             <li><Link href="/tuzuk">Tüzük</Link></li>
+            <li><Link href="/galeri">Galeri</Link></li>
             <li><Link href="/uyelik">Üyelik Formu</Link></li>
             <li><Link href="/iletisim">İletişim</Link></li>
           </ul>
