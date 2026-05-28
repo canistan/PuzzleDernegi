@@ -52,8 +52,6 @@ export default function Galeri() {
                     objectFit: 'cover',
                     transition: 'transform 0.3s ease'
                   }}
-                  onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
-                  onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
                 />
               </div>
             ))}

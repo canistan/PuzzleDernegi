@@ -90,6 +90,14 @@ a:hover {
   animation: fadeIn 0.8s ease forwards;
 }
 
+.hover-zoom img {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
 /* Glassmorphism Navbar */
 .navbar {
   position: fixed;
