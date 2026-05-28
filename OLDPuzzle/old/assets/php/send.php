@@ -47,8 +47,8 @@
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
-	$mail->Username = "turkiyepuzzleyarismasi@gmail.com";
-	$mail->Password = "puzzle2016";
+	$mail->Username = "YOUR_EMAIL_HERE";
+	$mail->Password = "YOUR_PASSWORD_HERE";
 	$mail->addAddress('pelin.celik@ozensanas.com', 'Pelin Çelik');
 	$mail->addAddress('turkiyepuzzleyarismasi@gmail.com', 'Türkiye Puzzle');
 	$mail->Subject = '12 Saat Puzzle Maratonu';
@@ -74,8 +74,8 @@
 		$mail_yarismaci->Port = 587;
 		$mail_yarismaci->SMTPSecure = 'tls';
 		$mail_yarismaci->SMTPAuth = true;
-		$mail_yarismaci->Username = "turkiyepuzzleyarismasi@gmail.com";
-		$mail_yarismaci->Password = "puzzle2016";
+		$mail_yarismaci->Username = "YOUR_EMAIL_HERE";
+		$mail_yarismaci->Password = "YOUR_PASSWORD_HERE";
 		$mail_yarismaci->addAddress($email, $name);
 		$mail_yarismaci->Subject = '12 Saat Puzzle Maratonu';
 		$mail_yarismaci->CharSet = 'UTF-8';
