@@ -1,21 +1,23 @@
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
-import configPromise from '../../../../../payload.config';
+import configPromise from '@payload-config';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AlbumClient from './AlbumClient';
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ id: string, locale: string }> }): Promise<Metadata> {
   const payload = await getPayload({ config: configPromise });
   try {
-    const album = await payload.findByID({ collection: 'albums', id: Number(params.id) });
+    const params = await props.params;
+    const album = await payload.findByID({ collection: 'albums', id: Number(params.id), locale: params.locale as any });
     return { title: `${album.title} | Puzzle Derneği` };
   } catch {
     return { title: 'Albüm | Puzzle Derneği' };
   }
 }
 
-export default async function AlbumDetail({ params }: { params: { id: string } }) {
+export default async function AlbumDetail(props: { params: Promise<{ id: string, locale: string }> }) {
+  const params = await props.params;
   const payload = await getPayload({ config: configPromise });
   let album;
   
@@ -23,6 +25,7 @@ export default async function AlbumDetail({ params }: { params: { id: string } }
     album = await payload.findByID({
       collection: 'albums',
       id: Number(params.id),
+      locale: params.locale as any,
     });
   } catch {
     notFound();

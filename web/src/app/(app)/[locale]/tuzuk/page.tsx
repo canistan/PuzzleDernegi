@@ -1,17 +1,19 @@
 import { Metadata } from 'next';
 import { tuzukData } from './tuzukData';
 import { getPayload } from 'payload';
-import configPromise from '../../../../payload.config';
+import configPromise from '@payload-config';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
   title: 'Dernek Tüzüğü | Puzzle Derneği',
 };
 
-export default async function Tuzuk() {
+export default async function Tuzuk(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   const bylawsPage = await payload.findGlobal({
     slug: 'bylawsPage',
+    locale: locale as any,
   });
 
   const title = bylawsPage.title || 'Dernek Tüzüğü';

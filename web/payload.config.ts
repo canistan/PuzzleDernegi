@@ -12,6 +12,11 @@ export default buildConfig({
   admin: {
     user: 'users',
   },
+  localization: {
+    locales: ['tr', 'en', 'de', 'fr', 'ru'],
+    defaultLocale: 'tr',
+    fallback: true,
+  },
   editor: lexicalEditor({}),
   collections: [
     {
@@ -33,6 +38,7 @@ export default buildConfig({
           type: 'text',
           label: 'Albüm Adı',
           required: true,
+          localized: true,
         },
         {
           name: 'date',
@@ -334,29 +340,34 @@ export default buildConfig({
                   type: 'text',
                   label: 'Üst Etiket (Badge) Metni',
                   defaultValue: "🧩 TÜRKİYE'NİN İLK VE TEK RESMİ PUZZLE DERNEĞİ",
+                  localized: true,
                 },
                 {
                   name: 'heroTitle',
                   type: 'text',
                   label: 'Ana Başlık',
                   required: true,
+                  localized: true,
                 },
                 {
                   name: 'heroSubtitle',
                   type: 'text',
                   label: 'Alt Başlık',
                   required: true,
+                  localized: true,
                 },
                 {
                   name: 'heroDescription',
                   type: 'textarea',
                   label: 'Açıklama Metni',
                   required: true,
+                  localized: true,
                 },
                 {
                   name: 'primaryButtonText',
                   type: 'text',
                   label: 'Birinci Buton Metni',
+                  localized: true,
                 },
                 {
                   name: 'primaryButtonLink',
@@ -367,6 +378,7 @@ export default buildConfig({
                   name: 'secondaryButtonText',
                   type: 'text',
                   label: 'İkinci Buton Metni',
+                  localized: true,
                 },
                 {
                   name: 'secondaryButtonLink',
@@ -393,12 +405,14 @@ export default buildConfig({
                   type: 'text',
                   label: 'Yüzen Kutu Başlığı',
                   defaultValue: 'Ödüllü Yarışmalar',
+                  localized: true,
                 },
                 {
                   name: 'floatingBadgeSubtitle',
                   type: 'text',
                   label: 'Yüzen Kutu Alt Başlığı',
                   defaultValue: 'Sürpriz hediyeler!',
+                  localized: true,
                 }
               ]
             },
@@ -409,19 +423,22 @@ export default buildConfig({
                   name: 'aboutTitle',
                   type: 'text',
                   label: 'Hakkında Başlığı',
-                  admin: { description: 'Örn: Avrupa Puzzle Şampiyonası Hakkında (Maks. 60 karakter)' }
+                  admin: { description: 'Örn: Avrupa Puzzle Şampiyonası Hakkında (Maks. 60 karakter)' },
+                  localized: true,
                 },
                 {
                   name: 'aboutText1',
                   type: 'textarea',
                   label: 'Hakkında Metni 1 (Kalın Yazı)',
-                  admin: { description: 'Hakkında bölümünün girişindeki büyük/kalın metin.' }
+                  admin: { description: 'Hakkında bölümünün girişindeki büyük/kalın metin.' },
+                  localized: true,
                 },
                 {
                   name: 'aboutText2',
                   type: 'textarea',
                   label: 'Hakkında Metni 2 (Normal Yazı)',
-                  admin: { description: 'Detaylı açıklamaların olduğu ikinci paragraf.' }
+                  admin: { description: 'Detaylı açıklamaların olduğu ikinci paragraf.' },
+                  localized: true,
                 },
                 {
                   name: 'aboutBgImage',
@@ -446,6 +463,7 @@ export default buildConfig({
                   type: 'text',
                   label: 'Sponsorlar Başlığı',
                   defaultValue: 'Sponsorlar',
+                  localized: true,
                 },
                 {
                   name: 'sponsors',
@@ -523,11 +541,13 @@ export default buildConfig({
           label: 'Sayfa Başlığı',
           defaultValue: 'Tarihçemiz',
           required: true,
+          localized: true,
         },
         {
           name: 'subtitle',
           type: 'textarea',
           label: 'Alt Başlık / Açıklama',
+          localized: true,
         },
         {
           name: 'events',
@@ -542,18 +562,21 @@ export default buildConfig({
               type: 'text',
               label: 'Tarih (Örn: Aralık 2014)',
               required: true,
+              localized: true,
             },
             {
               name: 'title',
               type: 'text',
               label: 'Etkinlik Başlığı',
               required: true,
+              localized: true,
             },
             {
               name: 'description',
               type: 'textarea',
               label: 'Etkinlik Detayı',
               required: true,
+              localized: true,
             },
             {
               name: 'image',
@@ -579,11 +602,13 @@ export default buildConfig({
           label: 'Sayfa Başlığı',
           defaultValue: 'Geçmiş Yarışmalar',
           required: true,
+          localized: true,
         },
         {
           name: 'description',
           type: 'textarea',
           label: 'Sayfa Açıklaması',
+          localized: true,
         },
         {
           name: 'competitions',
@@ -609,6 +634,7 @@ export default buildConfig({
               name: 'title',
               type: 'text',
               label: 'Başlık',
+              localized: true,
             },
             // Details fields
             {
@@ -617,7 +643,7 @@ export default buildConfig({
               label: 'Paragraflar',
               admin: { condition: (_, d) => d?.type === 'details' },
               fields: [
-                { name: 'text', type: 'textarea', label: 'Paragraf Metni' }
+                { name: 'text', type: 'textarea', label: 'Paragraf Metni', localized: true }
               ]
             },
             {
@@ -636,7 +662,7 @@ export default buildConfig({
               label: 'Dereceye Girenler Listesi',
               admin: { condition: (_, d) => d?.type === 'winners' },
               fields: [
-                { name: 'name', type: 'text', label: 'Kişi ve Derece/Süre' }
+                { name: 'name', type: 'text', label: 'Kişi ve Derece/Süre', localized: true }
               ]
             },
             {
@@ -645,8 +671,8 @@ export default buildConfig({
               label: 'Özel Ödüller',
               admin: { condition: (_, d) => d?.type === 'winners' },
               fields: [
-                { name: 'awardName', type: 'text', label: 'Ödül Adı' },
-                { name: 'winner', type: 'text', label: 'Kazanan Kişi' }
+                { name: 'awardName', type: 'text', label: 'Ödül Adı', localized: true },
+                { name: 'winner', type: 'text', label: 'Kazanan Kişi', localized: true }
               ]
             },
             // Image fields
@@ -662,6 +688,7 @@ export default buildConfig({
               type: 'textarea',
               label: 'Görsel Açıklaması',
               admin: { condition: (_, d) => d?.type === 'image' },
+              localized: true,
             }
           ]
         }
@@ -679,6 +706,7 @@ export default buildConfig({
           label: 'Sayfa Başlığı',
           defaultValue: 'Dernek Tüzüğü',
           required: true,
+          localized: true,
         },
         {
           name: 'blocks',
@@ -714,6 +742,7 @@ export default buildConfig({
               type: 'textarea',
               label: 'Metin / İçerik',
               required: true,
+              localized: true,
             }
           ]
         }
@@ -731,12 +760,14 @@ export default buildConfig({
           label: 'Sayfa Başlığı',
           defaultValue: 'DERNEK GALERİSİ',
           required: true,
+          localized: true,
         },
         {
           name: 'subtitle',
           type: 'textarea',
           label: 'Alt Başlık / Açıklama',
           defaultValue: 'Geçmiş yarışmalardan ve etkinliklerimizden unutulmaz anlar.',
+          localized: true,
         },
         {
           name: 'photos',
@@ -819,12 +850,14 @@ export default buildConfig({
           label: 'Sayfa Başlığı',
           defaultValue: 'Dernek Üyelik Formu',
           required: true,
+          localized: true,
         },
         {
           name: 'subtitle',
           type: 'textarea',
           label: 'Alt Başlık / Açıklama',
           defaultValue: 'Ailemize katılmak için aşağıdaki formu eksiksiz doldurunuz.',
+          localized: true,
         }
       ]
     },
@@ -838,6 +871,7 @@ export default buildConfig({
           name: 'address',
           type: 'textarea',
           label: 'Adres',
+          localized: true,
         },
         {
           name: 'phone',

@@ -1,18 +1,19 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { getPayload } from 'payload';
-import configPromise from '../../../../payload.config';
+import configPromise from '@payload-config';
 
 export const metadata: Metadata = {
   title: 'Tarihçe | Puzzle Derneği',
 };
 
-export default async function Tarihce() {
+export default async function Tarihce(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   let historyPage: any = null;
   
   try {
-    historyPage = await payload.findGlobal({ slug: 'historyPage' as any });
+    historyPage = await payload.findGlobal({ slug: 'historyPage', locale: locale as any });
   } catch (error) {
     console.error('Failed to load historyPage', error);
   }

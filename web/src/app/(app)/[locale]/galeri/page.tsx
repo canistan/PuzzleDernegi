@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
-import configPromise from '../../../../payload.config';
+import configPromise from '@payload-config';
 import Link from 'next/link';
 import AlbumClient from './[id]/AlbumClient';
 
@@ -10,16 +10,19 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
-export default async function Galeri() {
+export default async function Galeri(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   const galleryPage = await payload.findGlobal({
     slug: 'galleryPage',
+    locale: locale as any,
   });
 
   const albumsRes = await payload.find({
     collection: 'albums',
     sort: '-date',
     limit: 50,
+    locale: locale as any,
   });
   
   const albums = albumsRes.docs;

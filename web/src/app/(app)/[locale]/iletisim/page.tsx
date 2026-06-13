@@ -1,16 +1,18 @@
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
-import configPromise from '../../../../payload.config';
+import configPromise from '@payload-config';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'İletişim | Puzzle Derneği',
 };
 
-export default async function Iletisim() {
+export default async function Iletisim(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   const contactPage = await payload.findGlobal({
     slug: 'contactPage',
+    locale: locale as any,
   });
 
   const address = contactPage.address || `Tersane Caddesi Abdüsallah Sokak\nİzzet Baysal İş Hanı No:1 Kat:7\nKaraköy / İstanbul`;

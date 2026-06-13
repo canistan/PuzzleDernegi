@@ -1,18 +1,19 @@
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
-import configPromise from '../../../../payload.config';
+import configPromise from '@payload-config';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Geçmiş Yarışmalar | Puzzle Derneği',
 };
 
-export default async function GecmisYarismalar() {
+export default async function GecmisYarismalar(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   let pastCompetitionsPage: any = null;
   
   try {
-    pastCompetitionsPage = await payload.findGlobal({ slug: 'pastCompetitionsPage' as any });
+    pastCompetitionsPage = await payload.findGlobal({ slug: 'pastCompetitionsPage', locale: locale as any });
   } catch (error) {
     console.error('Failed to load pastCompetitionsPage', error);
   }

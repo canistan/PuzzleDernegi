@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import { getPayload } from 'payload';
-import configPromise from '../../../payload.config';
+import configPromise from '@payload-config';
 import Image from 'next/image';
 
-export default async function Home() {
+export default async function Home(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   let homePage: any = null;
   
   try {
-    homePage = await payload.findGlobal({ slug: 'homePage' as any });
+    homePage = await payload.findGlobal({ slug: 'homePage' as any, locale: locale as any });
   } catch (error) {
     console.error('Failed to load homePage', error);
   }
