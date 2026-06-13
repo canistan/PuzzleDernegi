@@ -210,13 +210,13 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
                   <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-2">Vesikalık Fotoğraf {isRequired('photo') && '*'}</label>
                   <p className="text-xs text-slate-500 mb-2">Lütfen son 6 ay içinde çekilmiş net bir vesikalık fotoğraf yükleyin.</p>
-                  <input type="file" name="photo" required={isRequired('photo')} accept="image/*" required className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
+                  <input type="file" name="photo" required={isRequired('photo')} accept="image/*" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
                 </div>
                 )}
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-2">Kimlik Görüntüsü (Ön Yüz) {isRequired('identityCard') && '*'}</label>
                   <p className="text-xs text-slate-500 mb-2">Resmi işlemler için kimlik belgenizin okunaklı bir fotoğrafını yükleyin.</p>
-                  <input type="file" name="identityCard" required={isRequired('identityCard')} accept="image/*,application/pdf" required className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
+                  <input type="file" name="identityCard" required={isRequired('identityCard')} accept="image/*,application/pdf" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
                 </div>
               </div>
             </section>

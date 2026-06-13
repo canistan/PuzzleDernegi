@@ -16,7 +16,10 @@ export default buildConfig({
   collections: [
     {
       slug: 'albums',
-      label: 'Albümler',
+      labels: {
+        singular: 'Albüm',
+        plural: 'Albümler',
+      },
       admin: {
         useAsTitle: 'title',
         group: 'GALERİ YÖNETİMİ',
@@ -90,7 +93,10 @@ export default buildConfig({
     },
     {
       slug: 'messages',
-      label: 'İletişim Mesajları',
+      labels: {
+        singular: 'İletişim Mesajı',
+        plural: 'İletişim Mesajları',
+      },
       admin: {
         useAsTitle: 'subject',
         defaultColumns: ['name', 'email', 'subject', 'createdAt'],

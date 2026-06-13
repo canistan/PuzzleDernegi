@@ -21,7 +21,7 @@ export default async function Tuzuk() {
   
   // Normalize payload blocks to match the old structure for rendering
   const displayBlocks = hasPayloadBlocks
-    ? bylawsPage.blocks!.map(block => ({
+    ? bylawsPage.blocks!.map((block: any) => ({
         type: block.blockType,
         content: block.content,
         maddeNo: block.maddeNo,
@@ -43,7 +43,7 @@ export default async function Tuzuk() {
         <div className="bg-white rounded-2xl shadow-xl border border-[#E2E8F0] overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
           <div className="p-8 sm:p-12 md:p-16">
             <div className="space-y-8">
-              {displayBlocks.map((item, index) => {
+              {displayBlocks.map((item: any, index: number) => {
                 if (item.type === 'main_title') return null; // Handled in hero
                 
                 if (item.type === 'section_title') {

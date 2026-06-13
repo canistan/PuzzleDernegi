@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
 import configPromise from '../../../../../payload.config';
-import { Media } from '../../../../../payload-types';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AlbumClient from './AlbumClient';
@@ -33,14 +32,14 @@ export default async function AlbumDetail({ params }: { params: { id: string } }
   const formattedDate = dateObj.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
   
   const images = (album.images || []).map((img: any) => {
-    const media = img as Media;
+    const media = img as any;
     return {
       src: media.url!,
       alt: media.alt || album.title,
       width: media.width || 800,
       height: media.height || 600,
     };
-  }).filter(img => img.src);
+  }).filter((img: any) => img.src);
 
   return (
     <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">

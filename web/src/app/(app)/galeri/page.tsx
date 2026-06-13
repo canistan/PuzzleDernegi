@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
 import configPromise from '../../../../payload.config';
-import { Media } from '../../../../payload-types';
 import Link from 'next/link';
 import AlbumClient from './[id]/AlbumClient';
 
@@ -54,7 +53,7 @@ export default async function Galeri() {
           (() => {
             const singleAlbum = albums[0];
             const images = (singleAlbum.images || []).map((img: any) => {
-              const media = img as Media;
+              const media = img as any;
               return {
                 src: media.url!,
                 alt: media.alt || singleAlbum.title,
@@ -74,7 +73,7 @@ export default async function Galeri() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {albums.map((album) => {
-              const cover = album.coverImage as Media | null;
+              const cover = album.coverImage as any;
               const dateObj = new Date(album.date);
               const formattedDate = dateObj.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
               const photoCount = Array.isArray(album.images) ? album.images.length : 0;
