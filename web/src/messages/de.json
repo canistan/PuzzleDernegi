@@ -39,5 +39,19 @@
     "lastUpdate": "Letzte Aktualisierung",
     "officialBylaws": "Offizielle Satzung des Puzzle-Vereins. Alle Rechte vorbehalten.",
     "article": "Artikel"
+  },
+  "home": {
+    "heroTitle": "EUROPÄISCHE PUZZLE-MEISTERSCHAFT",
+    "heroSubtitle": "DIE SPANNUNG BEGINNT!",
+    "heroDescription": "Nehmen Sie am Wettbewerb teil, zeigen Sie Ihr Können und treffen Sie Tausende von Puzzle-Enthusiasten aus der ganzen Türkei unter einem Dach.",
+    "primaryBtn": "Für den Wettbewerb anmelden",
+    "secondaryBtn": "Mitglied werden",
+    "badgeText": "🧩 DIE ERSTE UND EINZIGE OFFIZIELLE PUZZLE-VEREINIGUNG DER TÜRKEI",
+    "floatingTitle": "Preisgekrönte Wettbewerbe",
+    "floatingSub": "Überraschungsgeschenke!",
+    "aboutTitle": "Über die Europäische Puzzle-Meisterschaft",
+    "about1": "Die unter der Leitung der Puzzle Association (YAPBOZ DERNEĞİ) organisierte Europäische Puzzle-Meisterschaft bringt jedes Jahr Hunderte von Puzzle-Enthusiasten zusammen. Testen Sie Ihre Geschwindigkeit, zeigen Sie Ihr Können und gewinnen Sie Überraschungspreise in spannenden Wettbewerben in Einzel- und Teamkategorien!",
+    "about2": "Über die Schaltfläche 'Für den Wettbewerb anmelden' oben können Sie unsere offizielle Ticketseite besuchen, um Informationen zu den Regeln, dem Punktesystem und dem detaillierten Wettbewerbsprogramm zu erhalten.",
+    "sponsorsTitle": "Sponsoren"
   }
 }

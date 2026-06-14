@@ -39,5 +39,19 @@
     "lastUpdate": "Son Güncelleme",
     "officialBylaws": "Yapboz Derneği Resmi Tüzüğüdür. Tüm hakları saklıdır.",
     "article": "Madde"
+  },
+  "home": {
+    "heroTitle": "AVRUPA PUZZLE ŞAMPİYONASI",
+    "heroSubtitle": "HEYECANI BAŞLADI!",
+    "heroDescription": "Yarışmaya katıl, yeteneğini göster ve Türkiye'nin dört bir yanındaki binlerce puzzle tutkunuyla aynı çatı altında buluş.",
+    "primaryBtn": "Yarışmaya Kayıt Ol",
+    "secondaryBtn": "Derneğe Üye Ol",
+    "badgeText": "🧩 TÜRKİYE'NİN İLK VE TEK RESMİ PUZZLE DERNEĞİ",
+    "floatingTitle": "Ödüllü Yarışmalar",
+    "floatingSub": "Sürpriz hediyeler!",
+    "aboutTitle": "Avrupa Puzzle Şampiyonası Hakkında",
+    "about1": "Türkiye Puzzle Derneği (YAPBOZ DERNEĞİ) öncülüğünde düzenlenen Avrupa Puzzle Şampiyonası, her yıl yüzlerce puzzle tutkununu bir araya getiriyor. Bireysel ve takım kategorilerinde düzenlenen heyecan dolu yarışmalarda hızınızı test edin, yeteneklerinizi sergileyin ve sürpriz ödülleri kazanın!",
+    "about2": "Kurallar, puanlama sistemi ve detaylı yarışma programı hakkında bilgi almak için yukarıdaki 'Yarışmaya Kayıt Ol' butonundan resmi biletleme sayfamızı ziyaret edebilirsiniz.",
+    "sponsorsTitle": "Sponsorlar"
   }
 }

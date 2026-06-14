@@ -39,5 +39,19 @@
     "lastUpdate": "Dernière mise à jour",
     "officialBylaws": "Statuts officiels de l'Association de Puzzles. Tous droits réservés.",
     "article": "Article"
+  },
+  "home": {
+    "heroTitle": "CHAMPIONNAT D'EUROPE DE PUZZLE",
+    "heroSubtitle": "L'EXCITATION A COMMENCÉ!",
+    "heroDescription": "Rejoignez la compétition, montrez vos compétences et rencontrez des milliers de passionnés de puzzle de toute la Turquie sous le même toit.",
+    "primaryBtn": "S'inscrire au concours",
+    "secondaryBtn": "Devenir membre",
+    "badgeText": "🧩 LA PREMIÈRE ET UNIQUE ASSOCIATION OFFICIELLE DE PUZZLE DE TURQUIE",
+    "floatingTitle": "Concours primés",
+    "floatingSub": "Des cadeaux surprises!",
+    "aboutTitle": "À propos du championnat d'Europe de puzzle",
+    "about1": "Organisé sous la direction de la Puzzle Association (YAPBOZ DERNEĞİ), le Championnat d'Europe de Puzzle rassemble chaque année des centaines de passionnés de puzzle. Testez votre vitesse, montrez vos compétences et gagnez des prix surprises lors de compétitions passionnantes organisées dans les catégories individuelles et par équipes!",
+    "about2": "Vous pouvez visiter notre page officielle de billetterie à partir du bouton 'S'inscrire au concours' ci-dessus pour obtenir des informations sur les règles, le système de notation et le programme détaillé du concours.",
+    "sponsorsTitle": "Sponsors"
   }
 }

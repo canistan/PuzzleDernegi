@@ -2,10 +2,12 @@ import Link from 'next/link';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
+  const t = await getTranslations('home');
   let homePage: any = null;
   
   try {
@@ -15,25 +17,25 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
   }
 
   // Fallbacks if not set in panel
-  const heroTitle = homePage?.heroTitle || 'AVRUPA PUZZLE ŞAMPİYONASI';
-  const heroSubtitle = homePage?.heroSubtitle || 'HEYECANI BAŞLADI!';
-  const heroDescription = homePage?.heroDescription || 'Yarışmaya katıl, yeteneğini göster ve Türkiye\'nin dört bir yanındaki binlerce puzzle tutkunuyla aynı çatı altında buluş.';
-  const primaryBtnText = homePage?.primaryButtonText || 'Yarışmaya Kayıt Ol';
+  const heroTitle = homePage?.heroTitle || t('heroTitle');
+  const heroSubtitle = homePage?.heroSubtitle || t('heroSubtitle');
+  const heroDescription = homePage?.heroDescription || t('heroDescription');
+  const primaryBtnText = homePage?.primaryButtonText || t('primaryBtn');
   const primaryBtnLink = homePage?.primaryButtonLink || 'https://yarisbul.com/event-details/yesilay-avrupa-puzzle-sampiyonasi';
-  const secondaryBtnText = homePage?.secondaryButtonText || 'Derneğe Üye Ol';
+  const secondaryBtnText = homePage?.secondaryButtonText || t('secondaryBtn');
   const secondaryBtnLink = homePage?.secondaryButtonLink || '/uyelik';
   const heroImageUrl = homePage?.heroImage?.url || '/images/puzzle_hero_bg.png';
-  const heroBadgeText = homePage?.heroBadgeText || "🧩 TÜRKİYE'NİN İLK VE TEK RESMİ PUZZLE DERNEĞİ";
+  const heroBadgeText = homePage?.heroBadgeText || t('badgeText');
   const floatingBadgeIcon = homePage?.floatingBadgeIcon || '🏆';
-  const floatingBadgeTitle = homePage?.floatingBadgeTitle || 'Ödüllü Yarışmalar';
-  const floatingBadgeSubtitle = homePage?.floatingBadgeSubtitle || 'Sürpriz hediyeler!';
+  const floatingBadgeTitle = homePage?.floatingBadgeTitle || t('floatingTitle');
+  const floatingBadgeSubtitle = homePage?.floatingBadgeSubtitle || t('floatingSub');
 
-  const aboutTitle = homePage?.aboutTitle || 'Avrupa Puzzle Şampiyonası Hakkında';
-  const aboutText1 = homePage?.aboutText1 || 'Türkiye Puzzle Derneği (YAPBOZ DERNEĞİ) öncülüğünde düzenlenen Avrupa Puzzle Şampiyonası, her yıl yüzlerce puzzle tutkununu bir araya getiriyor. Bireysel ve takım kategorilerinde düzenlenen heyecan dolu yarışmalarda hızınızı test edin, yeteneklerinizi sergileyin ve sürpriz ödülleri kazanın!';
-  const aboutText2 = homePage?.aboutText2 || 'Kurallar, puanlama sistemi ve detaylı yarışma programı hakkında bilgi almak için yukarıdaki "Yarışmaya Kayıt Ol" butonundan resmi biletleme sayfamızı ziyaret edebilirsiniz.';
+  const aboutTitle = homePage?.aboutTitle || t('aboutTitle');
+  const aboutText1 = homePage?.aboutText1 || t('about1');
+  const aboutText2 = homePage?.aboutText2 || t('about2');
   const aboutBgImage = homePage?.aboutBgImage?.url || null;
   const showSponsors = homePage?.showSponsors !== false;
-  const sponsorsTitle = homePage?.sponsorsTitle || 'Sponsorlar';
+  const sponsorsTitle = homePage?.sponsorsTitle || t('sponsorsTitle');
   const customSponsors = homePage?.sponsors || [];
 
   const renderPresetSponsor = (presetType: string, key: any) => {
