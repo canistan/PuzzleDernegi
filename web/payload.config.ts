@@ -2,6 +2,7 @@ import { buildConfig } from 'payload'
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
+import sharp from 'sharp'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -9,6 +10,7 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
+  sharp,
   admin: {
     user: 'users',
   },
@@ -27,7 +29,7 @@ export default buildConfig({
       },
       admin: {
         useAsTitle: 'title',
-        group: 'GALERİ YÖNETİMİ',
+        group: 'Yönetim',
         defaultColumns: ['title', 'date'],
         description: 'Yeni albüm oluşturun ve fotoğrafları albümlere ekleyin.',
       },
@@ -71,13 +73,21 @@ export default buildConfig({
     {
       slug: 'users',
       auth: true,
+      admin: {
+        group: 'Yönetim',
+      },
       fields: [],
     },
     {
       slug: 'newsletter',
+      labels: {
+        singular: 'Abone',
+        plural: 'Aboneler',
+      },
       admin: {
         useAsTitle: 'email',
         defaultColumns: ['email', 'createdAt'],
+        group: 'Kullanıcı Bilgi Deposu',
         components: {
           beforeListTable: [
             '@/components/ExportNewsletterButton',
@@ -86,6 +96,7 @@ export default buildConfig({
       },
       access: {
         create: () => true, // Allow anyone to subscribe
+        update: () => false, // Read only in admin
       },
       fields: [
         {
@@ -100,16 +111,17 @@ export default buildConfig({
     {
       slug: 'messages',
       labels: {
-        singular: 'İletişim Mesajı',
-        plural: 'İletişim Mesajları',
+        singular: 'İletişim',
+        plural: 'İletişim',
       },
       admin: {
         useAsTitle: 'subject',
         defaultColumns: ['name', 'email', 'subject', 'createdAt'],
-        group: 'İLETİŞİM YÖNETİMİ',
+        group: 'Kullanıcı Bilgi Deposu',
       },
       access: {
         create: () => true, // Allow public form submissions
+        update: () => false, // Read only in admin
       },
       fields: [
         {
@@ -153,8 +165,13 @@ export default buildConfig({
     },
     {
       slug: 'members',
+      labels: {
+        singular: 'Üye',
+        plural: 'Üyeler',
+      },
       admin: {
         useAsTitle: 'firstName',
+        group: 'Kullanıcı Bilgi Deposu',
         components: {
           beforeListTable: [
             '@/components/ExportMembersButton',
@@ -163,6 +180,7 @@ export default buildConfig({
       },
       access: {
         create: () => true, // Allow public form submissions
+        update: () => false, // Read only in admin
       },
       fields: [
         {
@@ -306,7 +324,22 @@ export default buildConfig({
     },
     {
       slug: 'media',
-      upload: true,
+      upload: {
+        resizeOptions: {
+          width: 1920,
+          height: 1920,
+          withoutEnlargement: true,
+        },
+        formatOptions: {
+          format: 'webp',
+          options: {
+            quality: 80,
+          },
+        },
+      },
+      admin: {
+        group: 'Yönetim',
+      },
       access: {
         read: () => true,
       },
@@ -323,7 +356,7 @@ export default buildConfig({
       slug: 'homePage',
       label: 'Ana Sayfa',
       admin: {
-        group: 'SAYFALAR',
+        group: 'Site',
       },
       access: {
         read: () => true,
@@ -531,7 +564,7 @@ export default buildConfig({
       slug: 'historyPage',
       label: 'Tarihçe',
       admin: {
-        group: 'SAYFALAR',
+        group: 'Site',
       },
       access: { read: () => true },
       fields: [
@@ -592,7 +625,7 @@ export default buildConfig({
       slug: 'pastCompetitionsPage',
       label: 'Geçmiş Yarışmalar',
       admin: {
-        group: 'SAYFALAR',
+        group: 'Site',
       },
       access: { read: () => true },
       fields: [
@@ -697,7 +730,7 @@ export default buildConfig({
     {
       slug: 'bylawsPage',
       label: 'Tüzük',
-      admin: { group: 'SAYFALAR' },
+      admin: { group: 'Site' },
       access: { read: () => true },
       fields: [
         {
@@ -749,9 +782,9 @@ export default buildConfig({
       ]
     },
     {
-      slug: 'galleryPage',
-      label: 'Galeri Sayfa Ayarları',
-      admin: { group: 'GALERİ YÖNETİMİ' },
+      slug: 'gallerySettings',
+      label: 'Galeri',
+      admin: { group: 'Site' },
       access: { read: () => true },
       fields: [
         {
@@ -769,6 +802,14 @@ export default buildConfig({
           defaultValue: 'Geçmiş yarışmalardan ve etkinliklerimizden unutulmaz anlar.',
           localized: true,
         },
+      ]
+    },
+    {
+      slug: 'galleryPage',
+      label: 'Fotoğraflar',
+      admin: { group: 'Yönetim' },
+      access: { read: () => true },
+      fields: [
         {
           name: 'photos',
           type: 'array',
@@ -799,8 +840,8 @@ export default buildConfig({
     },
     {
       slug: 'membershipPage',
-      label: 'Üyelik Formu',
-      admin: { group: 'SAYFALAR' },
+      label: 'Üyelik',
+      admin: { group: 'Site' },
       access: { read: () => true },
       fields: [
         {
@@ -864,7 +905,7 @@ export default buildConfig({
     {
       slug: 'contactPage',
       label: 'İletişim',
-      admin: { group: 'SAYFALAR' },
+      admin: { group: 'Site' },
       access: { read: () => true },
       fields: [
         {
@@ -887,6 +928,16 @@ export default buildConfig({
           name: 'facebookUrl',
           type: 'text',
           label: 'Facebook Linki',
+        },
+        {
+          name: 'instagramUrl',
+          type: 'text',
+          label: 'Instagram Linki',
+        },
+        {
+          name: 'twitterUrl',
+          type: 'text',
+          label: 'X (Twitter) Linki',
         }
       ]
     }

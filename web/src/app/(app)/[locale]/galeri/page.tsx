@@ -14,7 +14,7 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
   const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
   const galleryPage = await payload.findGlobal({
-    slug: 'galleryPage',
+    slug: 'gallerySettings',
     locale: locale as any,
   });
 

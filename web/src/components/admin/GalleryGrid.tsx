@@ -250,14 +250,22 @@ const GalleryGridField: React.FC<any> = () => {
                     width: '100%',
                     fontSize: 12,
                     fontWeight: 600,
-                    padding: '8px 4px',
+                    padding: '8px 20px 8px 8px',
                     border: 'none',
                     borderTop: '1px solid rgba(0,0,0,0.1)',
-                    background: albumId ? '#4caf50' : '#e0e0e0',
+                    background: albumId 
+                      ? '#4caf50 url("data:image/svg+xml;utf8,<svg fill=\'%23ffffff\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>") no-repeat right 4px center'
+                      : '#e0e0e0 url("data:image/svg+xml;utf8,<svg fill=\'%23333333\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>") no-repeat right 4px center',
+                    backgroundSize: '16px',
                     color: albumId ? '#fff' : '#333',
                     cursor: 'pointer',
                     outline: 'none',
-                    textAlign: 'center',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    appearance: 'none',
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none'
                   }}
                 >
                   <option value="">Albüm seç...</option>
