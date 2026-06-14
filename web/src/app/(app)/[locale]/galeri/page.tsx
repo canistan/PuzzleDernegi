@@ -27,8 +27,8 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
   
   const albums = albumsRes.docs;
 
-  const title = galleryPage.title || 'DERNEK GALERİSİ';
-  const subtitle = galleryPage.subtitle || 'Geçmiş yarışmalardan ve etkinliklerimizden unutulmaz anlar.';
+  const title = galleryPage?.title || 'DERNEK GALERİSİ';
+  const subtitle = galleryPage?.subtitle || 'Geçmiş yarışmalardan ve etkinliklerimizden unutulmaz anlar.';
 
   return (
     <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
