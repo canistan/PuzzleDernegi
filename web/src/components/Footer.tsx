@@ -14,15 +14,15 @@ export default function Footer() {
           <div>
             <h3 style={{ color: 'var(--primary)' }}>Puzzle Derneği</h3>
             <p className="text-muted" style={{ marginTop: '1rem' }}>
-              Türkiye'deki tüm puzzle severleri bir araya getiren ve yarışmalar düzenleyen resmi dernek.
+              {t('footerDescription')}
             </p>
           </div>
           <div>
-            <h4 style={{ marginBottom: '1.5rem' }}>Hızlı Bağlantılar</h4>
+            <h4 style={{ marginBottom: '1.5rem' }}>{t('quickLinks')}</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }} className="text-muted">
               <li><Link href={`/${locale}/tarihce`}>{t('about')} & {t('history')}</Link></li>
               <li><Link href={`/${locale}/gecmis-yarismalar`}>{t('pastCompetitions')}</Link></li>
-              <li><Link href={`/${locale}/kvkk`}>KVKK Aydınlatma Metni</Link></li>
+              <li><Link href={`/${locale}/kvkk`}>{t('kvkk')}</Link></li>
               <CookieSettingsLink />
             </ul>
           </div>
@@ -30,9 +30,9 @@ export default function Footer() {
             <NewsletterForm />
           </div>
           <div>
-            <h4 style={{ marginBottom: '1.5rem' }}>İletişim & Sosyal Medya</h4>
+            <h4 style={{ marginBottom: '1.5rem' }}>{t('contactAndSocial')}</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }} className="text-muted">
-              <li>E-posta: turkiyepuzzleyarismasi@gmail.com</li>
+              <li>{t('email')}: turkiyepuzzleyarismasi@gmail.com</li>
               <li><Link href={`/${locale}/iletisim`} className="text-primary">{t('contact')}</Link></li>
             </ul>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
         <div style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color)', textAlign: 'center' }} className="text-muted">
-          <p>&copy; {new Date().getFullYear()} Puzzle Derneği. Tüm hakları saklıdır.</p>
+          <p>&copy; {new Date().getFullYear()} Puzzle Derneği. {t('allRightsReserved')}</p>
         </div>
       </div>
     </footer>
