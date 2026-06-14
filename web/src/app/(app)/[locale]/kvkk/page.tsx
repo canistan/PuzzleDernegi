@@ -6,17 +6,18 @@ export const metadata: Metadata = {
 
 export default function KVKK() {
   return (
-    <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-        <div className="p-8 md:p-12">
-          <div className="text-center mb-12 animate-fade-in">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4 text-[var(--primary)]">
-              Kişisel Verilerin Korunması Hakkında Aydınlatma Metni
-            </h1>
-            <p className="text-slate-500">Son Güncelleme: {new Date().toLocaleDateString('tr-TR')}</p>
-          </div>
+    <div style={{ backgroundColor: 'var(--bg-color)', minHeight: '100vh', padding: '4rem 1rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div className="section-header animate-fade-in">
+          <div className="section-divider" />
+          <h1 style={{ marginTop: '1rem' }}>
+            Kişisel Verilerin Korunması Hakkında Aydınlatma Metni
+          </h1>
+          <p>Son Güncelleme: {new Date().toLocaleDateString('tr-TR')}</p>
+        </div>
 
-          <div className="prose prose-slate max-w-none prose-headings:text-slate-800 prose-a:text-orange-500 hover:prose-a:text-orange-600">
+        <div className="card animate-fade-in" style={{ padding: '2.5rem', animationDelay: '0.1s' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '1.05rem', textAlign: 'justify' }}>
             <p>
               <strong>Puzzle Derneği</strong> olarak kişisel verilerinizin güvenliğine büyük önem vermekteyiz. 
               Bu bilinçle, derneğimizle ilişkili tüm şahıslara ait her türlü kişisel verinin 
@@ -24,13 +25,13 @@ export default function KVKK() {
               ve muhafaza edilmesine özen gösteriyoruz.
             </p>
 
-            <h3>1. Veri Sorumlusu</h3>
+            <h3 style={{ color: 'var(--text-main)', fontSize: '1.3rem', marginTop: '1rem' }}>1. Veri Sorumlusu</h3>
             <p>
               6698 sayılı KVKK uyarınca, kişisel verileriniz veri sorumlusu sıfatıyla Puzzle Derneği tarafından 
               aşağıda açıklanan amaçlar kapsamında işlenebilecektir.
             </p>
 
-            <h3>2. Kişisel Verilerin İşlenme Amacı</h3>
+            <h3 style={{ color: 'var(--text-main)', fontSize: '1.3rem', marginTop: '1rem' }}>2. Kişisel Verilerin İşlenme Amacı</h3>
             <p>
               Toplanan kişisel verileriniz, derneğimizin tüzüğünde belirtilen amaçların gerçekleştirilmesi, 
               üyelik işlemlerinin yürütülmesi, etkinlik ve yarışmaların organizasyonu, 
@@ -38,21 +39,21 @@ export default function KVKK() {
               yerine getirilmesi amaçlarıyla işlenmektedir.
             </p>
 
-            <h3>3. İşlenen Kişisel Veriler</h3>
+            <h3 style={{ color: 'var(--text-main)', fontSize: '1.3rem', marginTop: '1rem' }}>3. İşlenen Kişisel Veriler</h3>
             <p>
               Üyelik başvurusu ve etkinlik katılımı sırasında paylaştığınız ad, soyad, TC kimlik no, 
               iletişim bilgileri (telefon, e-posta, adres), doğum tarihi, meslek bilgisi, vesikalık fotoğraf 
               ve kimlik belgesi örneği gibi verileriniz işlenmektedir.
             </p>
 
-            <h3>4. Kişisel Verilerin Aktarılması</h3>
+            <h3 style={{ color: 'var(--text-main)', fontSize: '1.3rem', marginTop: '1rem' }}>4. Kişisel Verilerin Aktarılması</h3>
             <p>
               Kişisel verileriniz, kanuni zorunluluklar gereği yetkili kamu kurum ve kuruluşları dışında 
               hiçbir üçüncü şahıs veya kurumla paylaşılmamaktadır. Dernek içi etkinlik organizasyonlarında 
               sadece süreçle ilgili görevli personeller/üyeler ile sınırlı olarak paylaşılabilir.
             </p>
 
-            <h3>5. Kişisel Veri Toplamanın Yöntemi ve Hukuki Sebebi</h3>
+            <h3 style={{ color: 'var(--text-main)', fontSize: '1.3rem', marginTop: '1rem' }}>5. Kişisel Veri Toplamanın Yöntemi ve Hukuki Sebebi</h3>
             <p>
               Kişisel verileriniz, internet sitemiz üzerinden doldurduğunuz elektronik formlar, 
               fiziki üyelik başvuru formları ve basılı/elektronik belgeler aracılığıyla; 
@@ -61,13 +62,13 @@ export default function KVKK() {
               hukuki sebeplerine dayanarak toplanmaktadır.
             </p>
 
-            <h3>6. KVKK'nın 11. Maddesi Kapsamındaki Haklarınız</h3>
+            <h3 style={{ color: 'var(--text-main)', fontSize: '1.3rem', marginTop: '1rem' }}>6. KVKK'nın 11. Maddesi Kapsamındaki Haklarınız</h3>
             <p>
               Kişisel veri sahipleri olarak, haklarınıza ilişkin taleplerinizi derneğimize iletmeniz durumunda 
               derneğimiz, talebin niteliğine göre en kısa sürede ve en geç otuz gün içinde talebinizi ücretsiz olarak sonuçlandıracaktır.
             </p>
 
-            <p className="mt-8 pt-8 border-t border-slate-100 text-sm text-slate-500 text-center">
+            <p style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--border-light)', fontSize: '0.9rem', color: 'var(--text-muted)', textAlign: 'center' }}>
               Bu metin genel bir bilgilendirme amacıyla hazırlanmıştır. Detaylı bilgi için bizimle iletişime geçebilirsiniz.
             </p>
           </div>

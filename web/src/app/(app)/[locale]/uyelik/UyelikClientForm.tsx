@@ -53,25 +53,26 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+    <div style={{ backgroundColor: 'var(--bg-color)', minHeight: '100vh', padding: '4rem 1rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div className="section-header animate-fade-in">
+          <div className="section-divider" />
+          <h1 style={{ marginTop: '1rem' }}>
             {title}
           </h1>
-          <p className="text-xl text-slate-600">
+          <p>
             {subtitle}
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
+        <div className="card animate-fade-in" style={{ padding: '2.5rem', animationDelay: '0.1s' }}>
           {error && (
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 m-6 mb-0 rounded-r">
-              <p className="text-red-700 font-medium">{error}</p>
+            <div style={{ backgroundColor: '#FEF2F2', borderLeft: '4px solid #EF4444', padding: '1rem', marginBottom: '1.5rem', borderRadius: '0 8px 8px 0' }}>
+              <p style={{ color: '#B91C1C', fontWeight: 500 }}>{error}</p>
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="p-6 md:p-10 space-y-12">
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             
             {/* Section 1: Kişisel Bilgiler */}
             <section>

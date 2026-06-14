@@ -34,25 +34,25 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
   const subtitle = galleryPage?.subtitle || 'Geçmiş yarışmalardan ve etkinliklerimizden unutulmaz anlar.';
 
   return (
-    <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+    <div style={{ backgroundColor: '#F8FAFC', minHeight: '100vh', padding: '3rem 1rem' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+        
+        {/* Header */}
+        <div className="section-header animate-fade-in" style={{ paddingTop: '1rem' }}>
+          <div className="section-divider" />
+          <h1 style={{ marginTop: '1rem' }}>
             {title.includes(' ') ? (
               <>
-                {title.split(' ')[0]} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-orange-400">{title.split(' ').slice(1).join(' ')}</span>
+                {title.split(' ')[0]}{' '}
+                <span className="text-gradient-primary">{title.split(' ').slice(1).join(' ')}</span>
               </>
-            ) : (
-              title
-            )}
+            ) : title}
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            {subtitle}
-          </p>
+          <p>{subtitle}</p>
         </div>
         
         {albums.length === 0 ? (
-          <div className="text-center text-slate-500 py-12">
+          <div style={{ textAlign: 'center', color: '#64748B', padding: '4rem 1rem' }}>
             {t('noAlbums')}
           </div>
         ) : albums.length === 1 ? (
@@ -71,13 +71,13 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
             return images.length > 0 ? (
               <AlbumClient images={images} />
             ) : (
-              <div className="text-center text-slate-500 py-12">
+              <div style={{ textAlign: 'center', color: '#64748B', padding: '4rem 1rem' }}>
                 {t('noPhotos')}
               </div>
             );
           })()
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
             {albums.map((album) => {
               const cover = album.coverImage as any;
               const dateObj = new Date(album.date);
@@ -88,34 +88,42 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
                 <Link 
                   href={`/galeri/${album.id}`} 
                   key={album.id}
-                  className="group block relative rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300"
+                  style={{
+                    display: 'block',
+                    borderRadius: '16px',
+                    overflow: 'hidden',
+                    background: '#fff',
+                    border: '1px solid #E2E8F0',
+                    transition: 'all 0.3s ease',
+                    textDecoration: 'none',
+                  }}
                 >
-                  <div className="aspect-[4/3] w-full overflow-hidden relative bg-slate-100">
+                  <div style={{ aspectRatio: '4/3', width: '100%', overflow: 'hidden', position: 'relative', background: '#F1F5F9' }}>
                     {cover?.url ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img 
                         src={cover.url} 
                         alt={cover.alt || album.title}
-                        className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-slate-300">
-                        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                      <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#CBD5E1' }}>
+                        <svg style={{ width: '48px', height: '48px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity group-hover:opacity-100" />
+                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)' }} />
                     
-                    <div className="absolute bottom-0 left-0 w-full p-6 text-white transform transition-transform translate-y-2 group-hover:translate-y-0">
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-xs font-semibold uppercase tracking-wider text-orange-400 bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
+                    <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', padding: '1.25rem', color: '#fff' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#FF8E53', background: 'rgba(0,0,0,0.4)', padding: '0.2rem 0.5rem', borderRadius: '6px' }}>
                           {formattedDate}
                         </span>
-                        <span className="text-sm font-medium flex items-center gap-1">
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        <span style={{ fontSize: '0.85rem', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <svg style={{ width: '14px', height: '14px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                           {photoCount} {t('photos')}
                         </span>
                       </div>
-                      <h3 className="text-xl font-bold leading-tight line-clamp-2">{album.title}</h3>
+                      <h3 style={{ fontSize: '1.15rem', fontWeight: 700, lineHeight: 1.3 }}>{album.title}</h3>
                     </div>
                   </div>
                 </Link>

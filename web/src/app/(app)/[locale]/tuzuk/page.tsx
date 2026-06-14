@@ -35,78 +35,83 @@ export default async function Tuzuk(props: { params: Promise<{ locale: string }>
     : tuzukData;
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-4">
-            {t('associationName')}
-          </h1>
-          <div className="h-1 w-24 bg-[var(--primary)] mx-auto rounded-full mb-4"></div>
-          <h2 className="text-2xl font-semibold text-[#475569]">{title}</h2>
+    <div style={{ backgroundColor: 'var(--bg-color)', minHeight: '100vh', padding: '4rem 1rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div className="section-header animate-fade-in">
+          <div className="section-divider" />
+          <h1 style={{ marginTop: '1rem' }}>{t('associationName')}</h1>
+          <p>{title}</p>
         </div>
         
-        <div className="bg-white rounded-2xl shadow-xl border border-[#E2E8F0] overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-          <div className="p-8 sm:p-12 md:p-16">
-            <div className="space-y-8">
-              {displayBlocks.map((item: any, index: number) => {
-                if (item.type === 'main_title') return null; // Handled in hero
+        <div className="card animate-fade-in" style={{ padding: '2rem', animationDelay: '0.1s' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            {displayBlocks.map((item: any, index: number) => {
+              if (item.type === 'main_title') return null; // Handled in hero
+              
+              if (item.type === 'section_title') {
+                const cleanTitle = item.content.replace(/<\/?b>|<\/?h3>/gi, '').trim();
+                return (
+                  <div key={index} style={{ paddingTop: '2rem', borderBottom: '2px solid var(--border-light)', paddingBottom: '0.5rem', marginTop: '1rem' }}>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--secondary)' }}>
+                      {cleanTitle}
+                    </h3>
+                  </div>
+                );
+              }
+              
+              if (item.type === 'madde') {
+                let c = item.content;
+                if(c.startsWith('</b>')) c = c.substring(4).trim();
                 
-                if (item.type === 'section_title') {
-                  const cleanTitle = item.content.replace(/<\/?b>|<\/?h3>/gi, '').trim();
-                  return (
-                    <div key={index} className="pt-8 pb-2 border-b-2 border-[#F1F5F9] mt-8">
-                      <h3 className="text-xl md:text-2xl font-bold text-[#2B3A67]">
-                        {cleanTitle}
-                      </h3>
-                    </div>
-                  );
-                }
-                
-                if (item.type === 'madde') {
-                  let c = item.content;
-                  if(c.startsWith('</b>')) c = c.substring(4).trim();
-                  
-                  return (
-                    <div key={index} className="bg-[#F8FAFC] rounded-xl p-6 md:p-8 border-l-4 border-[#FF6B35] shadow-sm mt-8 transition-transform hover:-translate-y-1 hover:shadow-md duration-300">
-                      <h4 className="text-lg font-extrabold text-[#0F172A] mb-3 flex items-center">
-                        <span className="bg-[#FF6B35] text-white px-3 py-1 rounded-md text-sm mr-3">{t('article')} {item.maddeNo}</span>
-                      </h4>
-                      <p className="text-[#334155] text-lg leading-relaxed text-justify whitespace-pre-line">
-                        {c}
-                      </p>
-                    </div>
-                  );
-                }
-                
-                if (item.type === 'list_item') {
-                  return (
-                    <div key={index} className="flex items-start mt-4 ml-2 md:ml-6 group">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F1F5F9] text-[#FF6B35] font-bold flex items-center justify-center mr-4 mt-1 group-hover:bg-[#FF6B35] group-hover:text-white transition-colors">
-                        {item.listMarker?.replace('.', '') || ''}
-                      </div>
-                      <div className="flex-1 text-[#475569] text-lg leading-relaxed pt-1 whitespace-pre-line">
-                        {item.content}
-                      </div>
-                    </div>
-                  );
-                }
-                
-                if (item.type === 'paragraph') {
-                  return (
-                    <p key={index} className="text-[#475569] text-lg leading-relaxed text-justify mt-4 whitespace-pre-line">
-                      {item.content}
+                return (
+                  <div key={index} style={{ 
+                    backgroundColor: 'var(--bg-color)', 
+                    borderRadius: '12px', 
+                    padding: '1.5rem', 
+                    borderLeft: '4px solid var(--primary)', 
+                    marginTop: '1rem',
+                    transition: 'transform 0.3s',
+                  }}>
+                    <h4 style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '1rem', display: 'flex', alignItems: 'center' }}>
+                      <span style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '0.25rem 0.75rem', borderRadius: '6px', fontSize: '0.875rem', marginRight: '0.75rem' }}>
+                        {t('article')} {item.maddeNo}
+                      </span>
+                    </h4>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.7, textAlign: 'justify', whiteSpace: 'pre-line' }}>
+                      {c}
                     </p>
-                  );
-                }
-                
-                return null;
-              })}
-            </div>
+                  </div>
+                );
+              }
+              
+              if (item.type === 'list_item') {
+                return (
+                  <div key={index} style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', marginLeft: '1rem' }}>
+                    <div style={{ flexShrink: 0, width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'var(--border-light)', color: 'var(--primary)', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '1rem' }}>
+                      {item.listMarker?.replace('.', '') || ''}
+                    </div>
+                    <div style={{ flex: 1, color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.7, paddingTop: '4px', whiteSpace: 'pre-line' }}>
+                      {item.content}
+                    </div>
+                  </div>
+                );
+              }
+              
+              if (item.type === 'paragraph') {
+                return (
+                  <p key={index} style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.7, textAlign: 'justify', marginTop: '1rem', whiteSpace: 'pre-line' }}>
+                    {item.content}
+                  </p>
+                );
+              }
+              
+              return null;
+            })}
           </div>
         </div>
         
         {/* Footer info for document */}
-        <div className="mt-12 text-center text-[#64748B] text-sm animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div style={{ marginTop: '3rem', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.875rem', animationDelay: '0.2s' }} className="animate-fade-in">
           <p>{t('lastUpdate')}: {new Date().getFullYear()}</p>
           <p>{t('officialBylaws')}</p>
         </div>
