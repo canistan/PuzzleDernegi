@@ -1,5 +1,5 @@
 import { buildConfig } from 'payload'
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
+import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import sharp from 'sharp'
@@ -943,10 +943,8 @@ export default buildConfig({
     }
   ],
   secret: process.env.PAYLOAD_SECRET || 'SOME_SECRET_KEY',
-  db: sqliteAdapter({
-    client: {
-      url: 'file:./payload.db',
-    },
+  db: mongooseAdapter({
+    url: process.env.MONGODB_URI || '',
   }),
   plugins: [
     vercelBlobStorage({
