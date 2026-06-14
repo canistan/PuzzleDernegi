@@ -149,75 +149,161 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden bg-slate-50">
-        
-        {/* Background decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-          <div className="absolute -top-[20%] -right-[10%] w-[70%] h-[70%] rounded-full bg-orange-100/40 blur-3xl"></div>
-          <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-blue-100/40 blur-3xl"></div>
-        </div>
+      <section style={{
+        position: 'relative',
+        minHeight: '85vh',
+        display: 'flex',
+        alignItems: 'center',
+        paddingTop: '3rem',
+        paddingBottom: '4rem',
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #F8FAFC 0%, #FFF7ED 50%, #F1F5F9 100%)',
+      }}>
+        {/* Decorative blobs */}
+        <div style={{ position: 'absolute', top: '-15%', right: '-5%', width: '50%', height: '50%', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 70%)', filter: 'blur(40px)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '-15%', left: '-5%', width: '40%', height: '40%', borderRadius: '50%', background: 'radial-gradient(circle, rgba(43,58,103,0.06) 0%, transparent 70%)', filter: 'blur(40px)', pointerEvents: 'none' }} />
 
-        <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem', alignItems: 'center' }}>
             
             {/* Text Content */}
-            <div className="text-center lg:text-left">
+            <div style={{ textAlign: 'center' }}>
               {heroBadgeText && (
-                <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-orange-100 text-orange-600 font-semibold text-sm tracking-wide border border-orange-200">
+                <div style={{
+                  display: 'inline-block',
+                  padding: '0.5rem 1.25rem',
+                  marginBottom: '1.5rem',
+                  borderRadius: '9999px',
+                  background: 'rgba(255,107,53,0.1)',
+                  color: '#EA580C',
+                  fontWeight: 600,
+                  fontSize: '0.85rem',
+                  letterSpacing: '0.02em',
+                  border: '1px solid rgba(255,107,53,0.15)',
+                }}>
                   {heroBadgeText}
                 </div>
               )}
               
-              <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold leading-[1.1] mb-6 text-slate-800 tracking-tight">
-                {heroTitle} <br className="hidden lg:block"/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-orange-400">
+              <h1 style={{
+                fontSize: 'clamp(2.25rem, 6vw, 4rem)',
+                fontWeight: 900,
+                lineHeight: 1.1,
+                marginBottom: '1.5rem',
+                color: '#0F172A',
+                letterSpacing: '-0.03em',
+              }}>
+                {heroTitle}{' '}
+                <span style={{
+                  background: 'linear-gradient(135deg, #FF6B35, #FF8E53)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                }}>
                   {heroSubtitle}
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0 font-light whitespace-pre-line">
+              <p style={{
+                fontSize: 'clamp(1rem, 2.5vw, 1.25rem)',
+                color: '#475569',
+                marginBottom: '2rem',
+                maxWidth: '640px',
+                margin: '0 auto 2rem',
+                lineHeight: 1.7,
+                fontWeight: 400,
+                whiteSpace: 'pre-line',
+              }}>
                 {heroDescription}
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', justifyContent: 'center', alignItems: 'center' }}>
                 <Link href={primaryBtnLink} target={primaryBtnLink.startsWith('http') ? '_blank' : '_self'}
-                  className="px-8 py-4 bg-gradient-to-r from-[#FF6B35] to-orange-500 text-white font-bold rounded-2xl shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-1 transition-all text-lg text-center"
+                  style={{
+                    padding: '0.875rem 2rem',
+                    background: 'linear-gradient(135deg, #FF6B35, #FF8E53)',
+                    color: '#fff',
+                    fontWeight: 700,
+                    borderRadius: '14px',
+                    boxShadow: '0 4px 16px rgba(255,107,53,0.3)',
+                    fontSize: '1rem',
+                    textAlign: 'center',
+                    transition: 'all 0.3s ease',
+                    width: '100%',
+                    maxWidth: '320px',
+                  }}
                 >
                   {primaryBtnText}
                 </Link>
                 <Link href={secondaryBtnLink} target={secondaryBtnLink.startsWith('http') ? '_blank' : '_self'}
-                  className="px-8 py-4 bg-white text-slate-800 font-bold rounded-2xl border-2 border-slate-200 shadow-sm hover:border-slate-300 hover:bg-slate-50 hover:-translate-y-1 transition-all text-lg text-center"
+                  style={{
+                    padding: '0.875rem 2rem',
+                    background: '#fff',
+                    color: '#0F172A',
+                    fontWeight: 700,
+                    borderRadius: '14px',
+                    border: '2px solid #E2E8F0',
+                    fontSize: '1rem',
+                    textAlign: 'center',
+                    transition: 'all 0.3s ease',
+                    width: '100%',
+                    maxWidth: '320px',
+                  }}
                 >
                   {secondaryBtnText}
                 </Link>
               </div>
             </div>
 
-            {/* Shaped Image Content */}
-            <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-              <div className="relative aspect-square md:aspect-[4/3] lg:aspect-square w-full">
-                {/* Decorative border shape */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-orange-400 to-[#FF6B35] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] transform rotate-3 scale-105 animate-[spin_30s_linear_infinite] opacity-20 blur-lg"></div>
+            {/* Hero Image */}
+            <div style={{ position: 'relative', maxWidth: '500px', margin: '0 auto', width: '100%' }}>
+              <div style={{ position: 'relative', aspectRatio: '1', width: '100%' }}>
+                {/* Decorative ring */}
+                <div style={{
+                  position: 'absolute', inset: '-8px',
+                  background: 'linear-gradient(135deg, rgba(255,107,53,0.2), rgba(255,142,83,0.1))',
+                  borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
+                  filter: 'blur(8px)',
+                  animation: 'spin 25s linear infinite',
+                  pointerEvents: 'none',
+                }} />
                 
-                {/* The actual image with a cool shape */}
                 <Image 
                   src={heroImageUrl} 
                   alt="Puzzle Derneği Etkinlikleri" 
                   fill
                   priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover rounded-[30%_70%_70%_30%/30%_30%_70%_70%] shadow-2xl border-8 border-white/50 backdrop-blur-sm transition-transform duration-700 hover:scale-[1.02]"
+                  sizes="(max-width: 768px) 90vw, 500px"
+                  style={{
+                    objectFit: 'cover',
+                    borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
+                    boxShadow: '0 20px 60px rgba(0,0,0,0.12)',
+                    border: '6px solid rgba(255,255,255,0.6)',
+                  }}
                 />
                 
                 {/* Floating badge */}
                 {floatingBadgeTitle && (
-                  <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 animate-[bounce_3s_ease-in-out_infinite]">
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-2xl">
+                  <div style={{
+                    position: 'absolute', bottom: '-12px', left: '-12px',
+                    background: '#fff',
+                    padding: '0.875rem 1.25rem',
+                    borderRadius: '16px',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
+                    border: '1px solid #F1F5F9',
+                    display: 'flex', alignItems: 'center', gap: '0.75rem',
+                  }}>
+                    <div style={{
+                      width: '44px', height: '44px',
+                      background: 'rgba(255,107,53,0.1)',
+                      borderRadius: '12px',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '1.5rem',
+                    }}>
                       {floatingBadgeIcon}
                     </div>
                     <div>
-                      <div className="text-slate-800 font-bold">{floatingBadgeTitle}</div>
-                      <div className="text-sm text-slate-500">{floatingBadgeSubtitle}</div>
+                      <div style={{ fontWeight: 700, color: '#0F172A', fontSize: '0.9rem' }}>{floatingBadgeTitle}</div>
+                      <div style={{ fontSize: '0.8rem', color: '#64748B' }}>{floatingBadgeSubtitle}</div>
                     </div>
                   </div>
                 )}
@@ -228,22 +314,40 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
         </div>
       </section>
 
-      {/* Info Section */}
+      {/* About Section */}
       <section style={{ 
-        padding: '6rem 2rem', 
-        backgroundColor: aboutBgImage ? 'transparent' : 'var(--bg-color)',
-        backgroundImage: aboutBgImage ? `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${aboutBgImage})` : 'none',
+        padding: '5rem 1.25rem', 
+        backgroundColor: aboutBgImage ? 'transparent' : '#FFFFFF',
+        backgroundImage: aboutBgImage ? `linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url(${aboutBgImage})` : 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
       }}>
         <div className="container">
-          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: aboutBgImage ? '#FFF' : 'var(--primary)' }}>{aboutTitle}</h2>
-            <p style={{ fontSize: '1.2rem', lineHeight: 1.8, color: aboutBgImage ? '#E2E8F0' : 'var(--text-main)', marginBottom: '1.5rem', fontWeight: 600, whiteSpace: 'pre-line' }}>
+          <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>
+            <div className="section-divider" style={{ marginBottom: '1.5rem' }} />
+            <h2 style={{ 
+              fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', 
+              marginBottom: '1.5rem', 
+              color: aboutBgImage ? '#FFF' : '#0F172A',
+              lineHeight: 1.2,
+            }}>
+              {aboutTitle}
+            </h2>
+            <p style={{ 
+              fontSize: '1.05rem', 
+              lineHeight: 1.8, 
+              color: aboutBgImage ? '#E2E8F0' : '#334155', 
+              marginBottom: '1.25rem', 
+              whiteSpace: 'pre-line',
+            }}>
               {aboutText1}
             </p>
-            <p style={{ fontSize: '1.1rem', color: aboutBgImage ? '#CBD5E1' : 'var(--text-muted)', whiteSpace: 'pre-line' }}>
+            <p style={{ 
+              fontSize: '1rem', 
+              color: aboutBgImage ? '#CBD5E1' : '#64748B', 
+              whiteSpace: 'pre-line',
+              lineHeight: 1.7,
+            }}>
               {aboutText2}
             </p>
           </div>
@@ -252,9 +356,10 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
 
       {/* Sponsors Marquee */}
       {showSponsors && (
-        <section style={{ padding: '6rem 0', backgroundColor: '#F8FAFC', borderTop: '1px solid #E2E8F0', overflow: 'hidden' }}>
-          <div className="container" style={{ marginBottom: '3rem', textAlign: 'center' }}>
-            <h2 style={{ color: '#1E293B', fontSize: '2.5rem', fontWeight: 800 }}>{sponsorsTitle}</h2>
+        <section style={{ padding: '4rem 0', backgroundColor: '#F8FAFC', borderTop: '1px solid #E2E8F0', overflow: 'hidden' }}>
+          <div className="container" style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
+            <div className="section-divider" />
+            <h2 style={{ color: '#0F172A', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, marginTop: '1rem' }}>{sponsorsTitle}</h2>
           </div>
           
           <div style={{ 
@@ -264,15 +369,12 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
             width: '100%',
             position: 'relative'
           }}>
-            {/* Gradient masks for smooth edges */}
-            <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '150px', background: 'linear-gradient(to right, #F8FAFC, transparent)', zIndex: 2 }}></div>
-            <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '150px', background: 'linear-gradient(to left, #F8FAFC, transparent)', zIndex: 2 }}></div>
+            {/* Gradient masks */}
+            <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '80px', background: 'linear-gradient(to right, #F8FAFC, transparent)', zIndex: 2 }} />
+            <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '80px', background: 'linear-gradient(to left, #F8FAFC, transparent)', zIndex: 2 }} />
 
             <div className="sponsor-track" style={{ display: 'flex', animation: 'scroll 25s linear infinite' }}>
-              {/* 1. Set */}
               {renderSponsors()}
-
-              {/* 2. Set (for seamless loop) */}
               {renderSponsors()}
             </div>
           </div>
@@ -281,41 +383,34 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
 
       {/* Embedded Styles */}
       <style dangerouslySetInnerHTML={{__html: `
-        .hover-scale-btn:hover {
-          transform: translateY(-3px) scale(1.02);
-        }
-        .btn-primary:hover {
-          background-color: #C2410C !important;
-          box-shadow: 0 15px 30px rgba(234, 88, 12, 0.5) !important;
-        }
-        .btn-secondary:hover {
-          border-color: #CBD5E1 !important;
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
-        }
         .sponsor-card {
-          flex: 0 0 280px;
-          height: 130px;
+          flex: 0 0 240px;
+          height: 110px;
           background: white;
           border-radius: 12px;
           border: 1px solid #E2E8F0;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 1.5rem;
+          padding: 1.25rem;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+          box-shadow: 0 2px 8px rgba(0,0,0,0.03);
         }
         .sponsor-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 12px 20px rgba(0,0,0,0.08);
-          border-color: #CBD5E1;
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(0,0,0,0.06);
         }
         .sponsor-track:hover {
           animation-play-state: paused !important;
         }
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @media (min-width: 768px) {
+          .hero-grid { grid-template-columns: 1fr 1fr !important; }
+          .hero-buttons { flex-direction: row !important; }
+          .hero-text { text-align: left !important; }
         }
       `}} />
     </div>

@@ -21,7 +21,6 @@ export default async function Tarihce(props: { params: Promise<{ locale: string 
   const pageTitle = historyPage?.title || 'Derneğimizin Tarihçesi';
   const pageSubtitle = historyPage?.subtitle || 'Dünya şampiyonalarından Türkiye\'nin dört bir yanındaki puzzle severleri tek çatı altında toplamamıza uzanan o gurur verici yolculuğumuz.';
   
-  // Default static events if not provided via panel
   const defaultEvents = [
     {
       year: "Aralık 2014",
@@ -73,8 +72,6 @@ export default async function Tarihce(props: { params: Promise<{ locale: string 
     }
   ];
 
-  // If panel has events, use them. Otherwise fallback to default.
-  // Add colors dynamically
   const colorPalette = ['bg-blue-500', 'bg-green-500', 'bg-purple-500', 'bg-pink-500', 'bg-orange-500', 'bg-teal-500', 'bg-red-500'];
   let events = defaultEvents;
   
@@ -87,52 +84,86 @@ export default async function Tarihce(props: { params: Promise<{ locale: string 
   }
 
   return (
-    <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+    <div style={{ backgroundColor: '#F8FAFC', minHeight: '100vh', padding: '3rem 1rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
-            {pageTitle}
-          </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto whitespace-pre-line">
-            {pageSubtitle}
-          </p>
+        <div className="section-header animate-fade-in" style={{ marginBottom: '3.5rem', paddingTop: '1rem' }}>
+          <div className="section-divider" />
+          <h1 style={{ marginTop: '1rem' }}>{pageTitle}</h1>
+          <p style={{ whiteSpace: 'pre-line' }}>{pageSubtitle}</p>
         </div>
 
         {/* Timeline */}
-        <div className="relative border-l-4 border-slate-200 ml-4 md:ml-8 space-y-12 pb-12">
-          {events.map((event, index) => (
-            <div key={index} className="relative pl-8 md:pl-12 group">
-              {/* Timeline dot */}
-              <div className={`absolute -left-[14px] top-1 h-6 w-6 rounded-full border-4 border-white shadow-sm transition-transform duration-300 group-hover:scale-125 ${event.color}`}></div>
-              
-              <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <span className={`inline-block px-4 py-1 rounded-full text-white text-sm font-bold tracking-wider mb-4 ${event.color}`}>
-                  {event.year}
-                </span>
-                
-                <h3 className="text-2xl font-bold text-slate-800 mb-4">
-                  {event.title}
-                </h3>
-                
-                <p className="text-slate-600 text-lg leading-relaxed text-justify mb-6">
-                  {event.description}
-                </p>
+        <div style={{ position: 'relative', paddingLeft: '2rem', paddingBottom: '2rem' }}>
+          {/* Timeline line */}
+          <div style={{
+            position: 'absolute',
+            left: '11px',
+            top: 0,
+            bottom: 0,
+            width: '2px',
+            background: 'linear-gradient(to bottom, #FF6B35, #E2E8F0 30%, #E2E8F0 70%, transparent)',
+            borderRadius: '2px',
+          }} />
 
-                {event.image && (
-                  <div className="relative h-[300px] w-full rounded-xl overflow-hidden shadow-md mt-6">
-                    <Image 
-                      src={event.image} 
-                      alt={event.title}
-                      fill
-                      className="object-cover transition-transform duration-700 hover:scale-105"
-                    />
-                  </div>
-                )}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            {events.map((event, index) => (
+              <div key={index} className="animate-fade-in" style={{ position: 'relative', animationDelay: `${index * 0.08}s` }}>
+                {/* Timeline dot */}
+                <div className={event.color} style={{
+                  position: 'absolute',
+                  left: '-2rem',
+                  top: '1.5rem',
+                  width: '24px',
+                  height: '24px',
+                  borderRadius: '50%',
+                  border: '4px solid white',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                  zIndex: 1,
+                  marginLeft: '0px',
+                }} />
+                
+                <div className="card" style={{ 
+                  padding: '1.5rem',
+                  borderRadius: '16px',
+                  marginLeft: '0.75rem',
+                }}>
+                  <span className={`${event.color}`} style={{
+                    display: 'inline-block',
+                    padding: '0.3rem 0.875rem',
+                    borderRadius: '9999px',
+                    color: 'white',
+                    fontSize: '0.8rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.03em',
+                    marginBottom: '0.875rem',
+                  }}>
+                    {event.year}
+                  </span>
+                  
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#0F172A', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+                    {event.title}
+                  </h3>
+                  
+                  <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: 1.7, textAlign: 'justify' }}>
+                    {event.description}
+                  </p>
+
+                  {event.image && (
+                    <div style={{ position: 'relative', height: '240px', width: '100%', borderRadius: '12px', overflow: 'hidden', marginTop: '1.25rem' }}>
+                      <Image 
+                        src={event.image} 
+                        alt={event.title}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
       </div>
