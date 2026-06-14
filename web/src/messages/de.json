@@ -1,1 +1,43 @@
-{"common": {"home": "Home", "contact": "Contact", "about": "About Us", "gallery": "Gallery", "history": "History", "bylaws": "Bylaws", "pastCompetitions": "Past Competitions", "membership": "Membership"}}
+{
+  "common": {
+    "home": "Startseite",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "gallery": "Galerie",
+    "history": "Geschichte",
+    "bylaws": "Satzung",
+    "pastCompetitions": "Vergangene Wettbewerbe",
+    "membership": "Mitgliedschaft",
+    "quickLinks": "Schnelllinks",
+    "kvkk": "Datenschutzerklärung",
+    "contactAndSocial": "Kontakt & Soziale Medien",
+    "email": "E-Mail",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "footerDescription": "Der offizielle Verein, der alle Puzzle-Enthusiasten in der Türkei zusammenbringt und Wettbewerbe organisiert."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Füllen Sie das Formular für Fragen, Anregungen und Feedback aus oder kontaktieren Sie uns über unsere Kontaktdaten.",
+    "sendMessage": "Senden Sie uns eine Nachricht",
+    "sendMessageDesc": "Füllen Sie alle Felder aus, um Ihre Nachricht zu senden",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "emailLabel": "E-Mail",
+    "socialMedia": "Soziale Medien",
+    "map": "Karte"
+  },
+  "gallery": {
+    "noAlbums": "Noch keine Alben vorhanden.",
+    "noPhotos": "Noch keine Fotos in diesem Album.",
+    "photos": "Fotos"
+  },
+  "competitions": {
+    "noData": "Daten vergangener Wettbewerbe wurden noch nicht hinzugefügt."
+  },
+  "bylawsPage": {
+    "associationName": "PUZZLE-VEREIN",
+    "lastUpdate": "Letzte Aktualisierung",
+    "officialBylaws": "Offizielle Satzung des Puzzle-Vereins. Alle Rechte vorbehalten.",
+    "article": "Artikel"
+  }
+}

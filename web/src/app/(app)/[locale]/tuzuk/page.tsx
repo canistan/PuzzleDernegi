@@ -3,6 +3,7 @@ import { tuzukData } from './tuzukData';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import { Fragment } from 'react';
+import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Dernek Tüzüğü | Puzzle Derneği',
@@ -15,6 +16,8 @@ export default async function Tuzuk(props: { params: Promise<{ locale: string }>
     slug: 'bylawsPage',
     locale: locale as any,
   });
+
+  const t = await getTranslations('bylawsPage');
 
   const title = bylawsPage.title || 'Dernek Tüzüğü';
   
@@ -36,7 +39,7 @@ export default async function Tuzuk(props: { params: Promise<{ locale: string }>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-4">
-            YAPBOZ DERNEĞİ
+            {t('associationName')}
           </h1>
           <div className="h-1 w-24 bg-[var(--primary)] mx-auto rounded-full mb-4"></div>
           <h2 className="text-2xl font-semibold text-[#475569]">{title}</h2>
@@ -66,7 +69,7 @@ export default async function Tuzuk(props: { params: Promise<{ locale: string }>
                   return (
                     <div key={index} className="bg-[#F8FAFC] rounded-xl p-6 md:p-8 border-l-4 border-[#FF6B35] shadow-sm mt-8 transition-transform hover:-translate-y-1 hover:shadow-md duration-300">
                       <h4 className="text-lg font-extrabold text-[#0F172A] mb-3 flex items-center">
-                        <span className="bg-[#FF6B35] text-white px-3 py-1 rounded-md text-sm mr-3">Madde {item.maddeNo}</span>
+                        <span className="bg-[#FF6B35] text-white px-3 py-1 rounded-md text-sm mr-3">{t('article')} {item.maddeNo}</span>
                       </h4>
                       <p className="text-[#334155] text-lg leading-relaxed text-justify whitespace-pre-line">
                         {c}
@@ -104,8 +107,8 @@ export default async function Tuzuk(props: { params: Promise<{ locale: string }>
         
         {/* Footer info for document */}
         <div className="mt-12 text-center text-[#64748B] text-sm animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <p>Son Güncelleme: {new Date().getFullYear()}</p>
-          <p>Yapboz Derneği Resmi Tüzüğüdür. Tüm hakları saklıdır.</p>
+          <p>{t('lastUpdate')}: {new Date().getFullYear()}</p>
+          <p>{t('officialBylaws')}</p>
         </div>
       </div>
     </div>

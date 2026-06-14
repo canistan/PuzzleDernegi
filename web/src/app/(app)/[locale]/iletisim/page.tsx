@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default async function Iletisim(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
   const payload = await getPayload({ config: configPromise });
-  const t = await getTranslations('common');
+  const t = await getTranslations('contact');
   
   const contactPage = await payload.findGlobal({
     slug: 'contactPage',
@@ -32,10 +32,10 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
       <div className="pt-16 pb-10 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-            {t('contact')}
+            {t('title')}
           </h1>
           <p className="text-lg text-slate-500 max-w-xl mx-auto leading-relaxed">
-            Soru, görüş ve önerileriniz için formu doldurun veya iletişim bilgilerimizden bize ulaşın.
+            {t('subtitle')}
           </p>
         </div>
       </div>
@@ -52,8 +52,8 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-slate-800">Bize Mesaj Gönderin</h2>
-                  <p className="text-sm text-slate-400">Tüm alanları doldurarak mesajınızı iletebilirsiniz</p>
+                  <h2 className="text-xl font-bold text-slate-800">{t('sendMessage')}</h2>
+                  <p className="text-sm text-slate-400">{t('sendMessageDesc')}</p>
                 </div>
               </div>
               <ContactForm />
@@ -69,7 +69,7 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
                     <svg className="w-5 h-5 text-[#FF6B35]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-800 mb-1">Adres</h3>
+                    <h3 className="text-sm font-bold text-slate-800 mb-1">{t('address')}</h3>
                     <p className="text-sm text-slate-500 whitespace-pre-line leading-relaxed">{address}</p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
                     <svg className="w-5 h-5 text-[#FF6B35]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-800 mb-1">Telefon</h3>
+                    <h3 className="text-sm font-bold text-slate-800 mb-1">{t('phone')}</h3>
                     <a href={`tel:${phoneLink}`} className="text-sm text-slate-500 hover:text-[#FF6B35] transition-colors">{phone}</a>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
                     <svg className="w-5 h-5 text-[#FF6B35]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-800 mb-1">E-Posta</h3>
+                    <h3 className="text-sm font-bold text-slate-800 mb-1">{t('emailLabel')}</h3>
                     <a href={`mailto:${email}`} className="text-sm text-slate-500 hover:text-[#FF6B35] transition-colors break-all">{email}</a>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
 
               {/* Social Media Card */}
               <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <h3 className="text-sm font-bold text-slate-800 mb-4">Sosyal Medya</h3>
+                <h3 className="text-sm font-bold text-slate-800 mb-4">{t('socialMedia')}</h3>
                 <div className="flex items-center gap-3">
                   {facebookUrl && (
                     <a href={facebookUrl} target="_blank" rel="noopener noreferrer" title="Facebook"
@@ -133,7 +133,7 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
                     <div className="w-11 h-11 rounded-xl bg-orange-50 flex items-center justify-center shrink-0">
                       <svg className="w-5 h-5 text-[#FF6B35]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
                     </div>
-                    <h3 className="text-sm font-bold text-slate-800">Harita</h3>
+                    <h3 className="text-sm font-bold text-slate-800">{t('map')}</h3>
                   </div>
                 </div>
                 <div className="h-48">

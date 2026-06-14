@@ -1,1 +1,43 @@
-{"common": {"home": "Home", "contact": "Contact", "about": "About Us", "gallery": "Gallery", "history": "History", "bylaws": "Bylaws", "pastCompetitions": "Past Competitions", "membership": "Membership"}}
+{
+  "common": {
+    "home": "Accueil",
+    "contact": "Contact",
+    "about": "À propos",
+    "gallery": "Galerie",
+    "history": "Histoire",
+    "bylaws": "Statuts",
+    "pastCompetitions": "Compétitions passées",
+    "membership": "Adhésion",
+    "quickLinks": "Liens rapides",
+    "kvkk": "Politique de confidentialité",
+    "contactAndSocial": "Contact & Réseaux sociaux",
+    "email": "E-mail",
+    "allRightsReserved": "Tous droits réservés.",
+    "footerDescription": "L'association officielle qui rassemble tous les passionnés de puzzles en Turquie et organise des compétitions."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Remplissez le formulaire pour vos questions, suggestions et commentaires, ou contactez-nous via nos coordonnées.",
+    "sendMessage": "Envoyez-nous un message",
+    "sendMessageDesc": "Remplissez tous les champs pour envoyer votre message",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "emailLabel": "E-mail",
+    "socialMedia": "Réseaux sociaux",
+    "map": "Carte"
+  },
+  "gallery": {
+    "noAlbums": "Aucun album disponible pour le moment.",
+    "noPhotos": "Aucune photo dans cet album pour le moment.",
+    "photos": "Photos"
+  },
+  "competitions": {
+    "noData": "Les données des compétitions passées n'ont pas encore été ajoutées."
+  },
+  "bylawsPage": {
+    "associationName": "ASSOCIATION DE PUZZLES",
+    "lastUpdate": "Dernière mise à jour",
+    "officialBylaws": "Statuts officiels de l'Association de Puzzles. Tous droits réservés.",
+    "article": "Article"
+  }
+}

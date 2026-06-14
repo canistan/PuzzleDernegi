@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Geçmiş Yarışmalar | Puzzle Derneği',
@@ -17,6 +18,8 @@ export default async function GecmisYarismalar(props: { params: Promise<{ locale
   } catch (error) {
     console.error('Failed to load pastCompetitionsPage', error);
   }
+
+  const t = await getTranslations('competitions');
 
   const pageTitle = pastCompetitionsPage?.title || 'GEÇMİŞ PUZZLE YARIŞMALARI';
   const pageDescription = pastCompetitionsPage?.description || '';
@@ -136,7 +139,7 @@ export default async function GecmisYarismalar(props: { params: Promise<{ locale
 
           {(!pastCompetitionsPage?.competitions || pastCompetitionsPage.competitions.length === 0) && (
             <div className="text-center text-slate-500 py-8">
-              Geçmiş yarışma verileri henüz panele eklenmemiş.
+              {t('noData')}
             </div>
           )}
 

@@ -1,1 +1,43 @@
-{"common": {"home": "Home", "contact": "Contact", "about": "About Us", "gallery": "Gallery", "history": "History", "bylaws": "Bylaws", "pastCompetitions": "Past Competitions", "membership": "Membership"}}
+{
+  "common": {
+    "home": "Home",
+    "contact": "Contact",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "history": "History",
+    "bylaws": "Bylaws",
+    "pastCompetitions": "Past Competitions",
+    "membership": "Membership",
+    "quickLinks": "Quick Links",
+    "kvkk": "Privacy Policy",
+    "contactAndSocial": "Contact & Social Media",
+    "email": "Email",
+    "allRightsReserved": "All rights reserved.",
+    "footerDescription": "The official association bringing together all puzzle enthusiasts in Turkey and organizing competitions."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Fill out the form for questions, suggestions and feedback, or reach us using our contact information.",
+    "sendMessage": "Send Us a Message",
+    "sendMessageDesc": "Fill in all fields to submit your message",
+    "address": "Address",
+    "phone": "Phone",
+    "emailLabel": "Email",
+    "socialMedia": "Social Media",
+    "map": "Map"
+  },
+  "gallery": {
+    "noAlbums": "No albums available yet.",
+    "noPhotos": "No photos in this album yet.",
+    "photos": "Photos"
+  },
+  "competitions": {
+    "noData": "Past competition data has not been added yet."
+  },
+  "bylawsPage": {
+    "associationName": "PUZZLE ASSOCIATION",
+    "lastUpdate": "Last Update",
+    "officialBylaws": "Official Bylaws of the Puzzle Association. All rights reserved.",
+    "article": "Article"
+  }
+}

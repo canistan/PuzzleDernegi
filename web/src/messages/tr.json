@@ -1,1 +1,43 @@
-{"common": {"home": "Ana Sayfa", "contact": "İletişim", "about": "Hakkımızda", "gallery": "Galeri", "history": "Tarihçe", "bylaws": "Tüzük", "pastCompetitions": "Geçmiş Yarışmalar", "membership": "Üyelik"}}
+{
+  "common": {
+    "home": "Ana Sayfa",
+    "contact": "İletişim",
+    "about": "Hakkımızda",
+    "gallery": "Galeri",
+    "history": "Tarihçe",
+    "bylaws": "Tüzük",
+    "pastCompetitions": "Geçmiş Yarışmalar",
+    "membership": "Üyelik",
+    "quickLinks": "Hızlı Bağlantılar",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "contactAndSocial": "İletişim & Sosyal Medya",
+    "email": "E-posta",
+    "allRightsReserved": "Tüm hakları saklıdır.",
+    "footerDescription": "Türkiye'deki tüm puzzle severleri bir araya getiren ve yarışmalar düzenleyen resmi dernek."
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Soru, görüş ve önerileriniz için formu doldurun veya iletişim bilgilerimizden bize ulaşın.",
+    "sendMessage": "Bize Mesaj Gönderin",
+    "sendMessageDesc": "Tüm alanları doldurarak mesajınızı iletebilirsiniz",
+    "address": "Adres",
+    "phone": "Telefon",
+    "emailLabel": "E-Posta",
+    "socialMedia": "Sosyal Medya",
+    "map": "Harita"
+  },
+  "gallery": {
+    "noAlbums": "Henüz albüm bulunmamaktadır.",
+    "noPhotos": "Bu albümde henüz fotoğraf bulunmuyor.",
+    "photos": "Fotoğraf"
+  },
+  "competitions": {
+    "noData": "Geçmiş yarışma verileri henüz panele eklenmemiş."
+  },
+  "bylawsPage": {
+    "associationName": "YAPBOZ DERNEĞİ",
+    "lastUpdate": "Son Güncelleme",
+    "officialBylaws": "Yapboz Derneği Resmi Tüzüğüdür. Tüm hakları saklıdır.",
+    "article": "Madde"
+  }
+}

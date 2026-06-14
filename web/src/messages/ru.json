@@ -1,1 +1,43 @@
-{"common": {"home": "Home", "contact": "Contact", "about": "About Us", "gallery": "Gallery", "history": "History", "bylaws": "Bylaws", "pastCompetitions": "Past Competitions", "membership": "Membership"}}
+{
+  "common": {
+    "home": "Главная",
+    "contact": "Контакты",
+    "about": "О нас",
+    "gallery": "Галерея",
+    "history": "История",
+    "bylaws": "Устав",
+    "pastCompetitions": "Прошедшие соревнования",
+    "membership": "Членство",
+    "quickLinks": "Быстрые ссылки",
+    "kvkk": "Политика конфиденциальности",
+    "contactAndSocial": "Контакты и соцсети",
+    "email": "Эл. почта",
+    "allRightsReserved": "Все права защищены.",
+    "footerDescription": "Официальная ассоциация, объединяющая всех любителей пазлов в Турции и организующая соревнования."
+  },
+  "contact": {
+    "title": "Контакты",
+    "subtitle": "Заполните форму для вопросов, предложений и отзывов или свяжитесь с нами по указанным контактным данным.",
+    "sendMessage": "Отправьте нам сообщение",
+    "sendMessageDesc": "Заполните все поля, чтобы отправить сообщение",
+    "address": "Адрес",
+    "phone": "Телефон",
+    "emailLabel": "Эл. почта",
+    "socialMedia": "Социальные сети",
+    "map": "Карта"
+  },
+  "gallery": {
+    "noAlbums": "Альбомов пока нет.",
+    "noPhotos": "В этом альбоме пока нет фотографий.",
+    "photos": "Фото"
+  },
+  "competitions": {
+    "noData": "Данные о прошедших соревнованиях ещё не добавлены."
+  },
+  "bylawsPage": {
+    "associationName": "АССОЦИАЦИЯ ПАЗЛОВ",
+    "lastUpdate": "Последнее обновление",
+    "officialBylaws": "Официальный устав Ассоциации пазлов. Все права защищены.",
+    "article": "Статья"
+  }
+}
