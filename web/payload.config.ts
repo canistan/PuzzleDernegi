@@ -325,6 +325,8 @@ export default buildConfig({
     {
       slug: 'media',
       upload: {
+        staticURL: '/media',
+        staticDir: path.resolve(dirname, 'public/media'),
         resizeOptions: {
           width: 1920,
           height: 1920,
@@ -947,6 +949,7 @@ export default buildConfig({
     url: process.env.MONGODB_URI || '',
   }),
   plugins: [
+    /*
     vercelBlobStorage({
       enabled: true,
       collections: {
@@ -954,6 +957,7 @@ export default buildConfig({
       },
       token: process.env.BLOB_READ_WRITE_TOKEN,
     }),
+    */
   ],
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
