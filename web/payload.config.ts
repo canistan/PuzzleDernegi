@@ -5,6 +5,7 @@ import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import sharp from 'sharp'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { autoTranslateCollectionHook, autoTranslateGlobalHook } from './src/hooks/autoTranslateHook'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -32,6 +33,9 @@ export default buildConfig({
         group: 'Yönetim',
         defaultColumns: ['title', 'date'],
         description: 'Yeni albüm oluşturun ve fotoğrafları albümlere ekleyin.',
+      },
+      hooks: {
+        afterChange: [autoTranslateCollectionHook('albums')],
       },
       access: { read: () => true },
       fields: [
@@ -361,6 +365,9 @@ export default buildConfig({
       admin: {
         group: 'Site',
       },
+      hooks: {
+        afterChange: [autoTranslateGlobalHook('homePage')],
+      },
       access: {
         read: () => true,
       },
@@ -578,6 +585,9 @@ export default buildConfig({
       admin: {
         group: 'Site',
       },
+      hooks: {
+        afterChange: [autoTranslateGlobalHook('historyPage')],
+      },
       access: { read: () => true },
       fields: [
         {
@@ -638,6 +648,9 @@ export default buildConfig({
       label: 'Geçmiş Yarışmalar',
       admin: {
         group: 'Site',
+      },
+      hooks: {
+        afterChange: [autoTranslateGlobalHook('pastCompetitionsPage')],
       },
       access: { read: () => true },
       fields: [
@@ -743,6 +756,9 @@ export default buildConfig({
       slug: 'bylawsPage',
       label: 'Tüzük',
       admin: { group: 'Site' },
+      hooks: {
+        afterChange: [autoTranslateGlobalHook('bylawsPage')],
+      },
       access: { read: () => true },
       fields: [
         {
@@ -854,6 +870,9 @@ export default buildConfig({
       slug: 'membershipPage',
       label: 'Üyelik',
       admin: { group: 'Site' },
+      hooks: {
+        afterChange: [autoTranslateGlobalHook('membershipPage')],
+      },
       access: { read: () => true },
       fields: [
         {
@@ -918,6 +937,9 @@ export default buildConfig({
       slug: 'contactPage',
       label: 'İletişim',
       admin: { group: 'Site' },
+      hooks: {
+        afterChange: [autoTranslateGlobalHook('contactPage')],
+      },
       access: { read: () => true },
       fields: [
         {
