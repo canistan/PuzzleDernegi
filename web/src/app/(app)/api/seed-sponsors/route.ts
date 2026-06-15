@@ -11,6 +11,7 @@ export async function GET() {
     });
 
     const defaultSponsors = [
+      { name: 'Puzzle Derneği', type: 'preset', presetType: 'dernek' },
       { name: 'Yeşilay (Yatay Metin)', type: 'preset', presetType: 'yesilay_text' },
       { name: 'Yeşilay Spor Kulübü', type: 'preset', presetType: 'yesilay_spor' },
       { name: 'Anatolian', type: 'preset', presetType: 'anatolian' },
@@ -22,11 +23,7 @@ export async function GET() {
     await payload.updateGlobal({
       slug: 'homePage' as any,
       data: {
-        ...homePage,
         sponsors: defaultSponsors as any,
-        heroTitle: homePage?.heroTitle || 'Avrupa Puzzle Şampiyonası',
-        heroSubtitle: homePage?.heroSubtitle || 'Türkiye Elemeleri',
-        heroDescription: homePage?.heroDescription || 'Türkiye Puzzle Derneği (YAPBOZ DERNEĞİ) öncülüğünde düzenlenen Avrupa Puzzle Şampiyonası...',
       },
     })
     
