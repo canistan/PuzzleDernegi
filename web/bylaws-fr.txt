@@ -1,0 +1,777 @@
+// Lütfen Fransızca çevirinizi buraya yapıştırın ve kaydedin.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda475f -->
+[BAŞLIK]
+<h3>STATUTS DE L'ASSOCIATION YAPBOZ</h3> Nom et Siège de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4760 -->
+[MADDE 1]
+Nom de l'Association : Il s'agit de « YAPBOZ Derneği » (Association YAPBOZ). Son nom abrégé est « PuzzleDer ». Le siège de l'association est à Istanbul. Elle ne possède pas de succursales.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4761 -->
+[PARAGRAF]
+But de l'Association et Sujets, Formes et Domaines d'Activité à Poursuivre par l'Association pour Réaliser ce But
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4762 -->
+[MADDE 2]
+L'Association a été créée pour réaliser les buts suivants.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4763 -->
+[LİSTE_MADDESİ я.]
+Mener des activités et des événements afin de développer le secteur des loisirs (Hobby), principalement liés aux puzzles (yapboz), dans notre pays et d'accroître la sensibilisation à ce concept.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4764 -->
+[LİSTE_MADDESİ ii.]
+Développer des projets pour le développement de la culture des loisirs au sein des institutions et organisations opérant dans notre pays.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4765 -->
+[LİSTE_MADDESİ iii.]
+Assurer le développement des relations industrielles, commerciales et socio-économiques entre ses membres, qui sont des représentants d'entreprises produisant, important, commercialisant et fournissant des services de formation et de conseil pour les puzzles.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4766 -->
+[LİSTE_MADDESİ iv.]
+Représenter notre pays au niveau des organisations non gouvernementales en participant à des études et des formations internationales liées aux puzzles.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4767 -->
+[PARAGRAF]
+Conformément aux buts de l'Association, réaliser toutes sortes de publications, réunions, démonstrations, tables rondes, et organiser des concours et des événements.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4768 -->
+[BAŞLIK]
+Sujets et Formes d'Activité à Poursuivre par l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4769 -->
+[MADDE 3]
+</b> Toutes sortes d'activités visant à réaliser le but de l'Association relèvent du domaine d'activité de l'Association Yapboz. Dans ce cadre, pour réaliser son but, l'Association Yapboz :
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda476a -->
+[LİSTE_MADDESİ i.]
+Mène des études pour accroître les investissements nationaux et étrangers dans le domaine des loisirs en Turquie.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda476b -->
+[LİSTE_MADDESİ ii.]
+Mène des études pour s'assurer que les produits de puzzles nationaux ou importés vendus dans notre pays sont conformes à la législation en vigueur et pour empêcher que des produits dangereux et non conformes n'atteignent le consommateur.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda476c -->
+[LİSTE_MADDESİ iii.]
+Mène des études dans les domaines de l'éducation, de la protection de l'environnement et des affaires sociales.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda476d -->
+[LİSTE_MADDESİ iv.]
+Mène des études pour accroître le commerce extérieur et diversifier les produits et les marchés afin de créer une structure ouverte et compétitive dans le secteur.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda476e -->
+[LİSTE_MADDESİ в.]
+Communique et coopère stratégiquement avec des institutions et des organisations travaillant conformément à des principes communs au niveau national et international, et rejoint des fédérations et d'autres organisations faîtières si nécessaire. Dans ce cadre, elle peut être partie prenante, partie ou participante à des projets nationaux et internationaux.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda476f -->
+[LİSTE_MADDESİ VI.]
+Peut coopérer et former des plateformes avec des institutions privées et officielles nationales et étrangères, des universités, des chambres de commerce et d'industrie, des bourses de marchandises, des organisations professionnelles, des fondations, des associations, des syndicats et des organisations similaires.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4770 -->
+[LİSTE_MADDESİ VII.]
+Participe directement à l'élaboration des politiques nationales et internationales et aux processus de prise de décision, ou transmet efficacement ses opinions, en représentant les entreprises opérant dans le secteur des loisirs, y compris les puzzles.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4771 -->
+[LİSTE_MADDESİ viii.]
+Publie un magazine à intervalles réguliers afin de transmettre efficacement les activités de l'association et d'atteindre ses objectifs fondateurs.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4772 -->
+[LİSTE_MADDESİ ix.]
+Utilise toutes sortes d'outils de communication écrite et visuelle pour transmettre directement et communiquer ses activités, vues, suggestions, documents, rapports et éléments similaires au public ou aux institutions et organisations publiques concernées pour atteindre ses objectifs. Organise des réunions, des séminaires, des congrès, des conférences et des concours.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4773 -->
+[PARAGRAF]
+L'Association Yapboz (PuzzleDer) peut acquérir, établir, annuler et libérer toutes sortes de droits personnels, réels, d'usufruit, de bail et de préemption sur des biens immobiliers, y compris des hypothèques, par décision du Conseil d'Administration dans le cadre d'activités conformes à son but. Elle peut enregistrer des revenus pour l'Association, à condition que les revenus obtenus ne soient pas distribués entre ses membres et ne soient utilisés que conformément à son propre but ; elle peut créer des entreprises économiques. Pour atteindre le but de l'Association, elle crée des fondations si nécessaire ; reçoit et fait des aides et des dons ; peut accepter des testaments conditionnels et inconditionnels.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4774 -->
+[BAŞLIK]
+Domaine d'Activité de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4775 -->
+[PARAGRAF]
+L'Association opère dans le domaine du loisir des puzzles.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4776 -->
+[BAŞLIK]
+Droit de Devenir Membre et Procédures d'Adhésion
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4777 -->
+[MADDE 4]
+</b> Toute personne physique et morale qui a la capacité d'agir, adopte les buts et principes de l'association, accepte de travailler dans ce sens, et qui produit, importe, commercialise, fournit des services de formation et de conseil ou fait des puzzles, a le droit de devenir membre de l'association. Toutefois, si une personne morale souhaite devenir membre, elle doit être représentée par un gérant autorisé ou un actionnaire de l'entreprise. Les personnes physiques étrangères doivent également avoir le droit de s'établir en Turquie pour devenir membres. Cette condition n'est pas requise pour les membres honoraires.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4778 -->
+[PARAGRAF]
+La demande d'adhésion, à formuler par écrit à la présidence de l'association, est résolue par le conseil d'administration de l'association dans un délai maximum de trente jours, sous forme d'acceptation de l'adhésion ou de rejet de la demande, et le résultat est notifié au demandeur par écrit. Le membre dont la demande est acceptée est inscrit dans le registre tenu à cet effet. Les membres titulaires de l'association sont les fondateurs de l'association et les personnes admises comme membres par le conseil d'administration sur leur demande. Ceux qui ont apporté un soutien matériel et moral significatif à l'association peuvent être acceptés comme membres honoraires par décision du Conseil d'Administration.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4779 -->
+[BAŞLIK]
+Retrait de l'Adhésion
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda477a -->
+[MADDE 5]
+</b> Chaque membre a le droit de quitter l'association, à condition de le notifier par écrit.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda477b -->
+[PARAGRAF]
+Les procédures de sortie sont réputées conclues au moment où la lettre de démission du membre parvient au conseil d'administration.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda477c -->
+[PARAGRAF]
+Le retrait de l'adhésion ne met pas fin aux dettes accumulées du membre envers l'association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda477d -->
+[BAŞLIK]
+Exclusion de l'Adhésion
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda477e -->
+[MADDE 6]
+</b> Circonstances exigeant l'exclusion de l'adhésion à l'association :
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda477f -->
+[LİSTE_MADDESİ 1.]
+Agir de manière contraire aux statuts de l'association,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4780 -->
+[LİSTE_MADDESİ 2.]
+Éviter constamment les tâches assignées,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4781 -->
+[LİSTE_MADDESİ 3.]
+Ne pas payer la cotisation d'adhésion dans les six mois malgré des avertissements écrits,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4782 -->
+[LİSTE_MADDESİ 4.]
+Le non-respect des décisions prises par les organes de l'association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4783 -->
+[LİSTE_MADDESİ 5.]
+Avoir perdu les conditions d'adhésion,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4784 -->
+[LİSTE_MADDESİ 6.]
+La production, l'importation ou la commercialisation de produits contraires à la législation et aux normes applicables.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4785 -->
+[PARAGRAF]
+En cas de constatation de l'une des situations énumérées ci-dessus, le membre est exclu de l'adhésion par décision du conseil d'administration. Ceux qui quittent ou sont exclus de l'association sont radiés du registre des membres et ne peuvent revendiquer aucun droit sur les actifs de l'association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4786 -->
+[BAŞLIK]
+Adhésion Honoraire
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4787 -->
+[MADDE 7]
+</b> L'adhésion honoraire peut être accordée à des personnes privées du monde scientifique et des affaires jugées dignes, sur recommandation du Haut Conseil Consultatif et avec l'approbation du Conseil d'Administration, ou directement par le Conseil d'Administration. Les membres honoraires peuvent participer aux réunions et aux délibérations de l'Assemblée Générale, et peuvent s'engager dans des travaux oraux ou écrits tels que donner des avis, des déclarations et des rapports à la demande du Haut Conseil Consultatif ou du Conseil d'Administration, mais ils n'ont pas le droit de vote.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4788 -->
+[BAŞLIK]
+Organes de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4789 -->
+[MADDE 8]
+</b> Les organes de l'association sont indiqués ci-dessous.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda478a -->
+[LİSTE_MADDESİ 1.]
+L'Assemblée Générale,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda478b -->
+[LİSTE_MADDESİ 2.]
+Le Conseil d'Administration,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda478c -->
+[LİSTE_MADDESİ 3.]
+Le Conseil de Surveillance,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda478d -->
+[LİSTE_MADDESİ 4.]
+Le Conseil de Discipline,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda478e -->
+[LİSTE_MADDESİ 5.]
+Le Haut Conseil Consultatif
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda478f -->
+[PARAGRAF]
+Outre les organes énumérés ci-dessus, les commissions nécessaires peuvent être créées en cas de besoin. Des experts qui ne sont pas membres de l'association peuvent également être affectés à ces commissions. Les commissions établies travaillent sous l'autorité du conseil d'administration. Si jugé nécessaire, un règlement de travail est préparé par le conseil d'administration pour les conditions de travail des commissions à long terme et soumis à l'approbation de l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4790 -->
+[PARAGRAF]
+Forme de Constitution, Période de Réunion, et Procédure de Convocation et de Réunion de l'Assemblée Générale de l'Association Article 9- L'assemblée générale est l'organe de décision suprême de l'association ; elle se compose des membres inscrits de l'association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4791 -->
+[BAŞLIK]
+L'assemblée générale ;
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4792 -->
+[LİSTE_MADDESİ 1.]
+Se réunit de manière ordinaire au moment spécifié dans ces statuts,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4793 -->
+[LİSTE_MADDESİ 2.]
+Se réunit de manière extraordinaire dans les trente jours lorsque le conseil d'administration ou le conseil de surveillance le juge nécessaire, ou à la demande écrite d'un cinquième des membres de l'association. L'assemblée générale ordinaire se réunit tous les 2 ans, en mai, au jour, lieu et heure à déterminer par le conseil d'administration. L'assemblée générale est convoquée à la réunion par le conseil d'administration. Si le conseil d'administration ne convoque pas l'assemblée générale à une réunion ; à la demande de l'un des membres, le juge de paix charge trois membres de convoquer l'assemblée générale à une réunion.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4794 -->
+[BAŞLIK]
+Procédure de Convocation
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4795 -->
+[PARAGRAF]
+Le conseil d'administration prépare la liste des membres qui ont le droit de participer à l'assemblée générale selon les statuts de l'association. Les membres ayant le droit de participer à l'assemblée générale sont convoqués à la réunion au moins quinze jours à l'avance, par l'annonce du jour, de l'heure, du lieu et de l'ordre du jour dans un journal ou par notification écrite ou par courrier électronique. Dans cette convocation, si la réunion ne peut avoir lieu faute de quorum, le jour, l'heure et le lieu de la deuxième réunion sont également précisés. Le délai entre la première réunion et la deuxième réunion ne peut être inférieur à sept jours ni supérieur à soixante jours. Si la réunion est reportée pour une raison autre que le manque de quorum, cette situation est annoncée aux membres conformément à la procédure de convocation effectuée pour la première réunion, en précisant les raisons du report. La deuxième réunion doit se tenir au plus tard dans les six mois à compter de la date de report.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4796 -->
+[PARAGRAF]
+Les membres sont à nouveau convoqués à la deuxième réunion selon les principes énoncés au premier paragraphe. La réunion de l'assemblée générale ne peut être reportée plus d'une fois.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4797 -->
+[BAŞLIK]
+Procédure de Réunion
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4798 -->
+[PARAGRAF]
+L'assemblée générale se réunit avec la majorité absolue des membres ayant le droit d'y participer, et avec la participation des deux tiers en cas de modification des statuts et de dissolution de l'association ; en cas de report de la réunion faute de quorum, la majorité n'est pas requise lors de la deuxième réunion. Cependant, le nombre de membres participant à cette réunion ne peut être inférieur au double du nombre total des membres du conseil d'administration et du conseil de surveillance.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4799 -->
+[PARAGRAF]
+La liste des membres ayant le droit de participer à l'assemblée générale est tenue à disposition sur le lieu de la réunion.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda479a -->
+[PARAGRAF]
+Les documents d'identité délivrés par les autorités officielles des membres entrant sur le lieu de la réunion sont contrôlés par les membres du conseil d'administration ou les agents désignés par le conseil d'administration. Les membres pénètrent sur le lieu de la réunion en apposant leur signature en face de leur nom sur la liste établie par le conseil d'administration. Si le quorum de réunion est atteint, la situation est consignée dans un procès-verbal, et la réunion est ouverte par le président du conseil d'administration ou un membre du conseil d'administration qu'il désignera.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda479b -->
+[PARAGRAF]
+Si le quorum de réunion ne peut être atteint, un procès-verbal est également dressé par le conseil d'administration. Après l'ouverture, un bureau est constitué en élisant un président et un nombre suffisant de vice-présidents et un secrétaire pour diriger la réunion. Lors des votes à organiser pour l'élection des organes de l'association, il est obligatoire pour les membres votants de prouver leur identité au bureau et de signer en face de leur nom sur la liste des présences. La direction de la réunion et la garantie de la sécurité incombent au président du bureau.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda479c -->
+[PARAGRAF]
+Lors de l'assemblée générale, seuls les points à l'ordre du jour sont discutés. Toutefois, il est obligatoire d'inscrire à l'ordre du jour les questions dont la discussion est demandée par écrit par un dixième des membres présents à la réunion. À l'assemblée générale, chaque membre dispose d'une voix ; le membre doit voter personnellement. Les membres honoraires peuvent assister aux réunions de l'assemblée générale mais ne peuvent pas voter. Les questions discutées et les décisions prises lors de la réunion sont consignées dans un procès-verbal et signées conjointement par le président du bureau et les secrétaires. À la fin de la réunion, le procès-verbal et d'autres documents sont remis au président du conseil d'administration. Le président du conseil d'administration est responsable de la protection de ces documents et de leur remise au nouveau conseil d'administration élu dans les sept jours.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda479d -->
+[BAŞLIK]
+Procédures et Modalités de Vote et de Prise de Décision de l'Assemblée Générale
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda479e -->
+[MADDE 10]
+</b> Lors de l'assemblée générale, sauf décision contraire, les élections des membres du conseil d'administration et du conseil de surveillance sont votées au scrutin secret, et les décisions sur les autres sujets sont votées à main levée. Les votes secrets sont les votes recueillis en déposant les papiers ou bulletins de vote scellés par le président de la réunion dans une urne vide par les membres après avoir fait le nécessaire, et déterminés par un dépouillement public après la fin du vote. Lors du vote à main levée, la méthode spécifiée par le président de l'assemblée générale est appliquée.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda479f -->
+[PARAGRAF]
+Les décisions de l'assemblée générale sont prises à la majorité absolue des membres présents à la réunion. Toutefois, les décisions portant sur la modification des statuts et la dissolution de l'association ne peuvent être prises qu'à la majorité des deux tiers des membres présents à la réunion.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a0 -->
+[BAŞLIK]
+Décisions Prises Sans Réunion ni Convocation
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a1 -->
+[PARAGRAF]
+Les décisions prises avec la participation écrite de tous les membres sans se réunir, et les décisions prises par tous les membres de l'association se réunissant sans respecter la procédure de convocation écrite dans ces statuts, sont valables. La prise de décision de cette manière ne remplace pas une réunion ordinaire.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a2 -->
+[BAŞLIK]
+Missions et Pouvoirs de l'Assemblée Générale
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a3 -->
+[MADDE 11]
+</b> Les questions suivantes sont discutées et décidées par l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a4 -->
+[LİSTE_MADDESİ я.]
+L'élection des organes de l'Association dont la mission d'élection est confiée à l'Assemblée Générale par les statuts,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a5 -->
+[LİSTE_MADDESİ ii.]
+La modification des Statuts de l'Association,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a6 -->
+[LİSTE_MADDESİ iii.]
+La discussion des rapports du Conseil d'Administration et du Conseil de Surveillance,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a7 -->
+[LİSTE_MADDESİ iv.]
+Le quitus au Conseil d'Administration,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a8 -->
+[LİSTE_MADDESİ в.]
+La discussion et l'adoption du budget préparé par le Conseil d'Administration, tel quel ou avec des modifications,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47a9 -->
+[LİSTE_MADDESİ VI.]
+La prise de décision sur les recours formés contre les décisions d'exclusion et de suspension de l'adhésion.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47aa -->
+[LİSTE_MADDESİ VII.]
+La dissolution de l'Association,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ab -->
+[LİSTE_MADDESİ viii.]
+L'accomplissement d'autres tâches spécifiées par la législation et les Statuts de l'Association comme devant être effectuées par l'Assemblée Générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ac -->
+[BAŞLIK]
+Composition, Missions et Pouvoirs du Conseil d'Administration
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ad -->
+[MADDE 12]
+</b> Le Conseil d'Administration est élu par l'assemblée générale avec cinq membres titulaires et cinq membres suppléants. Le conseil d'administration détermine le président, le vice-président, le secrétaire, le trésorier et le membre en procédant à une répartition des tâches par une décision lors de sa première réunion après l'élection. Le conseil d'administration peut être convoqué en réunion à tout moment, à condition que tous les membres en soient informés. Il se réunit en présence de plus de la moitié du nombre total des membres. Les décisions sont prises à la majorité absolue du nombre total des membres participant à la réunion. En cas de vacance parmi les membres titulaires du conseil d'administration en raison d'une démission ou d'autres raisons, il est obligatoire de convoquer les membres suppléants à leurs fonctions dans l'ordre de la majorité des voix obtenues à l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ae -->
+[BAŞLIK]
+Missions et Pouvoirs du Conseil d'Administration
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47af -->
+[PARAGRAF]
+Le conseil d'administration accomplit les tâches suivantes.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b0 -->
+[LİSTE_MADDESİ я.]
+Gérer l'association dans le cadre des buts et des activités définis dans les statuts de l'association, et dans ce cadre, prendre et appliquer toutes sortes de décisions dans la limite de ses pouvoirs,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b1 -->
+[LİSTE_MADDESİ ii.]
+Représenter l'association ou autoriser un ou plusieurs de ses propres membres à cet égard,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b2 -->
+[BAŞLIK]
+iii. L'adhésion de l'Association à des fédérations ou son retrait
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b3 -->
+[LİSTE_MADDESİ iv.]
+Les activités internationales de l'association, son adhésion à des associations ou des organisations à l'étranger ou son retrait,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b4 -->
+[LİSTE_MADDESİ в.]
+Évaluer et finaliser les demandes d'adhésion à l'association,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b5 -->
+[PARAGRAF]
+vi. À condition que cela ne soit pas contraire aux Statuts de l'Association, prendre des décisions concernant la création de commissions et la préparation de règlements sur toutes les questions liées aux activités de l'association en vue de leur application par les membres, les organes de l'association et les responsables,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b6 -->
+[PARAGRAF]
+vii. En préparant le budget de la période suivante, déterminer le droit d'entrée, la cotisation annuelle et les parts de participation des membres en cohérence avec les recettes du budget,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b7 -->
+[LİSTE_MADDESİ viii.]
+Mettre en œuvre les procédures spécifiées dans les statuts concernant les membres qui ne paient pas leurs cotisations annuelles et leurs parts de participation,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b8 -->
+[LİSTE_MADDESİ ix.]
+Désigner le Secrétaire Général et déterminer ses conditions de travail,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47b9 -->
+[BAŞLIK]
+x. Élire les délégués qui représenteront l'Association au sein des fédérations auxquelles l'Association a décidé d'adhérer
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ba -->
+[PARAGRAF]
+xi. Mettre en œuvre les décisions prises en assemblée générale,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47bb -->
+[PARAGRAF]
+xii. À la fin de chaque année d'activité, établir le compte d'exploitation ou le bilan et le compte de résultat de l'association, ainsi que le rapport expliquant les activités du Conseil d'Administration, et les présenter à l'assemblée générale lors de sa réunion,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47bc -->
+[PARAGRAF]
+xiii. Effectuer les transactions concernant les comptes de recettes et de dépenses de l'association, déterminer la ou les personnes qui percevront les recettes au nom de l'association, accorder l'autorisation à ces personnes et annuler leurs autorisations,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47bd -->
+[PARAGRAF]
+xiv. Acheter toutes sortes de biens immobiliers nécessaires à l'association ou vendre les biens immobiliers existants.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47be -->
+[PARAGRAF]
+xv. Accomplir les autres tâches et exercer les pouvoirs qui lui sont conférés par les statuts de l'association et la législation,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47bf -->
+[BAŞLIK]
+Composition, Missions et Pouvoirs du Conseil de Surveillance
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c0 -->
+[MADDE 13]
+Le Conseil de Surveillance est élu par l'assemblée générale avec trois membres titulaires et trois membres suppléants.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c1 -->
+[PARAGRAF]
+En cas de vacance parmi les membres titulaires du conseil de surveillance en raison d'une démission ou d'autres raisons, il est obligatoire de convoquer les membres suppléants à leurs fonctions dans l'ordre de la majorité des voix obtenues à l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c2 -->
+[BAŞLIK]
+Missions et Pouvoirs du Conseil de Surveillance
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c3 -->
+[PARAGRAF]
+Le conseil de surveillance inspecte si l'association opère conformément à son but indiqué dans ses statuts et aux sujets de travail mentionnés pour la réalisation de ce but, si les livres, les comptes et les registres sont tenus conformément à la législation et aux statuts de l'association, selon les principes et procédures déterminés dans les statuts de l'association et à des intervalles n'excédant pas un an, et présente les résultats de l'audit dans un rapport au conseil d'administration et à l'assemblée générale lors de sa réunion.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c4 -->
+[PARAGRAF]
+Le conseil de surveillance convoque l'assemblée générale à une réunion lorsque cela est nécessaire.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c5 -->
+[BAŞLIK]
+Composition, Missions et Pouvoirs du Conseil de Discipline
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c6 -->
+[MADDE 14]
+Le Conseil de Discipline est élu par l'assemblée générale avec trois membres titulaires et trois membres suppléants.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c7 -->
+[PARAGRAF]
+En cas de vacance parmi les membres titulaires du conseil de discipline en raison d'une démission ou d'autres raisons, il est obligatoire de convoquer les membres suppléants à leurs fonctions dans l'ordre de la majorité des voix obtenues à l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c8 -->
+[BAŞLIK]
+Missions et Pouvoirs du Conseil de Discipline
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47c9 -->
+[PARAGRAF]
+La mission du conseil de discipline est de mener un examen, une recherche et, s'il est mandaté, une enquête sur le sujet dont l'examen est demandé par le conseil d'administration de l'association, de préparer un rapport dans les 15 jours et de présenter le rapport au conseil d'administration accompagné d'une recommandation.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ca -->
+[BAŞLIK]
+Haut Conseil Consultatif, Missions et Pouvoirs
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47cb -->
+[PARAGRAF]
+Article 15– Le Haut Conseil Consultatif est le plus haut organe consultatif de l'Association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47cc -->
+[PARAGRAF]
+Le Haut Conseil Consultatif se compose d'un total de 5 membres, comprenant des membres Titulaires, Honoraires et d'Honneur élus par l'Assemblée Générale. Le président du conseil d'administration du mandat précédent et les présidents des mandats antérieurs sont membres de droit du conseil. Si le nombre de présidents de mandats antérieurs est supérieur à 5, les membres sont élus par l'assemblée générale parmi les présidents des mandats antérieurs.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47cd -->
+[PARAGRAF]
+Les autres membres du Haut Conseil Consultatif sont élus par l'assemblée générale de l'association parmi les membres qui sont membres de l'association depuis au moins cinq (5) ans. Le Bureau Présidentiel du Haut Conseil Consultatif, composé de trois membres, est élu lors de la réunion de l'Assemblée Générale pour une durée de deux ans. Le Bureau Présidentiel se compose d'un président, d'un vice-président et d'un membre secrétaire. À l'invitation du Président du Conseil, il se réunit aux dates qu'il juge appropriées, délibère sur ses sujets et prend des décisions. En outre, si le conseil d'administration le demande, il peut également se réunir de manière extraordinaire à l'invitation du Président du Conseil d'Administration.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ce -->
+[PARAGRAF]
+Le président du Haut Conseil Consultatif est également membre ordinaire du comité de rédaction du magazine, qui est l'organe de publication de l'association. Le Haut Conseil Consultatif élit au moins un autre membre, en plus du président, comme membre du comité de rédaction du magazine. Le Haut Conseil Consultatif peut nommer d'autres membres au sein du comité de rédaction du magazine si le Conseil d'Administration l'approuve.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47cf -->
+[PARAGRAF]
+Le Médiateur (Ombudsman) de l'Association Yapboz (PuzzleDer) est élu pour une durée de deux ans par le Haut Conseil Consultatif parmi les membres du Haut Conseil Consultatif.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d0 -->
+[PARAGRAF]
+Les décisions du Conseil sont de nature consultative et ne lient pas le Conseil d'Administration. Selon la nature de l'ordre du jour, les représentants des pouvoirs Législatif, Exécutif et Judiciaire, des organisations non gouvernementales, des organisations professionnelles ayant la personnalité morale de droit public et de leurs organisations faîtières, des membres d'institutions académiques, ainsi que des membres de l'association qui ne sont pas membres du Conseil, peuvent être invités par la Présidence du Conseil aux réunions du Haut Conseil Consultatif pour échanger leurs points de vue.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d1 -->
+[PARAGRAF]
+La correspondance du Conseil est assurée par le secrétariat de l'association. Si le Président du Conseil et ses membres le souhaitent, ils peuvent assister aux réunions du conseil d'administration sans droit de vote.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d2 -->
+[BAŞLIK]
+Principales missions et pouvoirs du Conseil
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d3 -->
+[LİSTE_MADDESİ я.]
+Examiner le cours général et les problèmes du monde des puzzles (yapboz) et éclairer les projets à long terme,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d4 -->
+[LİSTE_MADDESİ ii.]
+Évaluer les stratégies à préparer afin d'atteindre les buts de l'association de la manière la plus appropriée et faire des recommandations,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d5 -->
+[LİSTE_MADDESİ iii.]
+Examiner les activités de l'association en termes de conformité aux objectifs et d'efficacité dans l'obtention de résultats, et recommander les mesures nécessaires,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d6 -->
+[LİSTE_MADDESİ iv.]
+Nommer deux membres au magazine de l'association, dont l'un est le Président du Haut Conseil Consultatif,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d7 -->
+[LİSTE_MADDESİ в.]
+Nommer le Médiateur de l'Association Yapboz
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d8 -->
+[BAŞLIK]
+Sources de Revenus de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47d9 -->
+[MADDE 16]
+Les sources de revenus de l'association sont énumérées ci-dessous.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47da -->
+[LİSTE_MADDESİ 1.]
+Cotisation des Membres : Elle est fixée par l'Assemblée Générale à un droit d'entrée de 50 TL et une cotisation annuelle de 100 TL pour les membres. Le Conseil d'Administration a le pouvoir d'augmenter ou de diminuer ce montant jusqu'à 50 %.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47db -->
+[LİSTE_MADDESİ 2.]
+Les dons et aides faits volontairement à l'association par des personnes physiques et morales.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47dc -->
+[LİSTE_MADDESİ 3.]
+Les revenus tirés des activités organisées par l'association telles que les thés et les dîners, les voyages et les divertissements, les représentations, les concerts, les concours de puzzles et/ou sportifs, et les conférences,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47dd -->
+[LİSTE_MADDESİ 4.]
+Les revenus générés par les actifs de l'association. 5- Les dons et les aides qui seront collectés conformément aux dispositions de la législation sur la collecte des aides.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47de -->
+[LİSTE_MADDESİ 6.]
+Les bénéfices tirés des activités commerciales que l'association entreprend pour se procurer les revenus nécessaires à la réalisation de son but.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47df -->
+[LİSTE_MADDESİ 7.]
+Autres revenus.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e0 -->
+[BAŞLIK]
+Principes et Procédures de Tenue des Livres de l'Association et Livres à Tenir
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e1 -->
+[MADDE 17]
+Principes de tenue des livres ;
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e2 -->
+[PARAGRAF]
+Au sein de l'association, les livres sont tenus sur la base de la comptabilité de trésorerie (recettes/dépenses). Toutefois, si le revenu brut annuel dépasse la limite spécifiée à l'Article 31 du Règlement des Associations, les livres seront tenus sur la base de la comptabilité d'engagement (bilan) à partir de la période comptable suivante. En cas de passage à la comptabilité d'engagement, s'il tombe en dessous de la limite susmentionnée pendant deux périodes comptables consécutives, il est possible de revenir à la comptabilité de trésorerie à partir de l'année suivante. Indépendamment de la limite susmentionnée, les livres peuvent être tenus sur la base de la comptabilité d'engagement par décision du conseil d'administration. En cas d'ouverture d'une entreprise commerciale de l'association, un livre séparé est tenu pour cette entreprise commerciale conformément aux dispositions de la Loi de Procédure Fiscale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e3 -->
+[BAŞLIK]
+Procédure d'Enregistrement
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e4 -->
+[PARAGRAF]
+Les livres et les registres de l'association sont tenus conformément aux procédures et principes spécifiés dans le Règlement des Associations.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e5 -->
+[BAŞLIK]
+Livres à Tenir
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e6 -->
+[PARAGRAF]
+Les livres énumérés ci-dessous sont tenus au sein de l'association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e7 -->
+[LİSTE_MADDESİ я.]
+Les livres à tenir sur la base de la comptabilité de trésorerie et les principes à respecter sont les suivants :
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e8 -->
+[LİSTE_MADDESİ 1.]
+Livre des Décisions : Les décisions du conseil d'administration sont inscrites dans ce livre par ordre de date et de numéro, et les décisions sont signées au bas par les membres ayant participé à la réunion.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47e9 -->
+[LİSTE_MADDESİ 2.]
+Registre des Membres : Les informations d'identité des personnes entrant dans l'association en tant que membres, ainsi que les dates d'entrée et de sortie de l'association sont inscrites dans ce registre. Les montants des droits d'entrée et des cotisations annuelles payés par les membres peuvent être inscrits dans ce registre.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ea -->
+[LİSTE_MADDESİ 3.]
+Registre du Courrier : Le courrier entrant et sortant est enregistré dans ce registre avec la date et le numéro de série. Les originaux du courrier entrant et les copies du courrier sortant sont classés. Le courrier entrant ou sortant par courrier électronique est conservé sous forme imprimée.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47eb -->
+[LİSTE_MADDESİ 4.]
+Livre d'Inventaire : La date et le mode d'acquisition des biens d'équipement appartenant à l'association, les lieux où ils sont utilisés ou donnés, et la radiation de ceux dont la durée d'utilisation a expiré, sont inscrits dans ce livre.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ec -->
+[LİSTE_MADDESİ 5.]
+Livre de Compte d'Exploitation : Les revenus perçus et les dépenses engagées au nom de l'association sont inscrits de manière claire et régulière dans ce livre.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ed -->
+[LİSTE_MADDESİ 6.]
+Registre des Reçus : Les numéros de série et de séquence des reçus, les noms, prénoms et signatures de ceux qui reçoivent et retournent ces documents, ainsi que les dates auxquelles ils les ont reçus et retournés, sont inscrits dans ce registre.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ee -->
+[LİSTE_MADDESİ ii.]
+Les livres à tenir sur la base de la comptabilité d'engagement (bilan) et les principes à respecter sont les suivants :
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ef -->
+[LİSTE_MADDESİ 1.]
+Les livres mentionnés aux sous-alinéas 1, 2, 3 et 6 de l'alinéa (a) sont également tenus en cas de tenue des livres sur la base du bilan.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f0 -->
+[LİSTE_MADDESİ 2.]
+Livre Journal, Grand Livre et Livre d'Inventaire : La procédure de tenue de ces livres et la méthode d'enregistrement sont exécutées conformément aux principes de la Loi de Procédure Fiscale et des Communiqués Généraux sur l'Application du Système Comptable publiés sur la base de l'autorisation accordée au Ministère des Finances par cette Loi.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f1 -->
+[BAŞLIK]
+Certification des Livres
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f2 -->
+[PARAGRAF]
+Au sein de l'association, les livres obligatoires sont certifiés par la direction provinciale des associations ou par un notaire avant de commencer à être utilisés. L'utilisation de ces livres se poursuit jusqu'à ce que leurs pages soient épuisées, et il n'y a pas de certification intermédiaire des livres. Toutefois, il est obligatoire de faire certifier à nouveau chaque année les livres tenus sur la base du bilan ainsi que les livres à formulaires ou à formulaires continus, dans le dernier mois précédant l'année au cours de laquelle ils seront utilisés.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f3 -->
+[BAŞLIK]
+Établissement du Compte de Résultat et du Bilan
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f4 -->
+[PARAGRAF]
+En cas de tenue des registres sur la base de la comptabilité de trésorerie, un « Tableau du Compte d'Exploitation » (spécifié à l'Annexe-16 du Règlement des Associations) est préparé à la fin de l'année (31 décembre). Dans le cas d'une tenue des livres sur la base de la comptabilité d'engagement (bilan), un bilan et un compte de résultat sont établis à la fin de l'année (31 décembre) sur la base des Communiqués Généraux sur l'Application du Système Comptable publiés par le Ministère des Finances.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f5 -->
+[BAŞLIK]
+Transactions de Recettes et de Dépenses de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f6 -->
+[MADDE 18]
+Documents de recettes et de dépenses ;
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f7 -->
+[PARAGRAF]
+Les revenus de l'association sont perçus avec un « Reçu » (dont un modèle se trouve à l'Annexe-17 du Règlement des Associations). En cas d'encaissement des revenus de l'association par l'intermédiaire des banques, des documents tels que des reçus ou des relevés de compte émis par la banque tiennent lieu de reçu. Les dépenses de l'association sont effectuées avec des documents de dépense tels que des factures, des reçus de vente au détail et des reçus de profession libérale. Toutefois, pour les paiements de l'association relevant de l'Article 94 de la Loi de l'Impôt sur le Revenu, une note de dépense est établie conformément aux dispositions de la Loi de Procédure Fiscale, et pour ses paiements ne relevant pas de ce champ d'application, un « Reçu de Dépense » (dont un modèle se trouve à l'Annexe-13 du Règlement des Associations) est établi. Les livraisons gratuites de biens et de services à effectuer par l'association à des particuliers, des institutions ou des organisations se font avec un « Document de Livraison d'Aide en Nature » (dont un modèle se trouve à l'Annexe-14 du Règlement des Associations). Les livraisons gratuites de biens et de services à effectuer par des particuliers, des institutions ou des organisations à l'association sont acceptées avec un « Reçu de Don en Nature » (dont un modèle se trouve à l'Annexe-15 du Règlement des Associations).
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f8 -->
+[BAŞLIK]
+Reçus
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47f9 -->
+[PARAGRAF]
+Les « Reçus » à utiliser pour la perception des revenus de l'association (dans le format et la taille indiqués à l'Annexe-17 du Règlement des Associations) sont imprimés par l'imprimerie, sur décision du conseil d'administration. Concernant l'impression et le contrôle des reçus, la réception par l'imprimerie, l'enregistrement dans le livre, la passation des pouvoirs entre les anciens et les nouveaux trésoriers, l'utilisation de ces reçus par la ou les personnes qui percevront les revenus au nom de l'association et la remise des revenus perçus, les actions sont menées conformément aux dispositions pertinentes du Règlement des Associations.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47fa -->
+[BAŞLIK]
+Certificat d'Autorisation
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47fb -->
+[PARAGRAF]
+La ou les personnes qui percevront les revenus au nom de l'association, ainsi que la durée de leur autorisation, sont déterminées par décision du conseil d'administration. Un « Certificat d'Autorisation » (dont un modèle figure à l'Annexe-19 du Règlement des Associations) contenant l'identité claire, la signature et les photographies des personnes qui percevront les revenus est établi en trois exemplaires par l'association et approuvé par le président du conseil d'administration de l'association. Une copie des certificats d'autorisation est remise aux unités des associations. Les modifications concernant le certificat d'autorisation sont notifiées à l'unité des associations dans un délai de quinze jours par le président du conseil d'administration. Les personnes qui percevront les revenus au nom de l'association ne peuvent commencer à percevoir des revenus qu'après la remise d'une copie des certificats d'autorisation établis à leur nom à l'unité des associations. Concernant l'utilisation, le renouvellement, la restitution et autres questions relatives au certificat d'autorisation, les actions sont menées conformément aux dispositions pertinentes du Règlement des Associations.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47fc -->
+[BAŞLIK]
+Durée de Conservation des Documents
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47fd -->
+[PARAGRAF]
+À l'exclusion des livres, les reçus, les documents de dépenses et autres documents utilisés par l'association sont conservés pendant 5 ans conformément à l'ordre des numéros et des dates dans les livres où ils sont enregistrés, sous réserve des durées spécifiées dans les lois spéciales.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47fe -->
+[BAŞLIK]
+Soumission de la Déclaration
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda47ff -->
+[MADDE 19]
+La « Déclaration de l'Association » (présentée à l'Annexe-21 du Règlement des Associations) concernant les activités et les résultats de fin d'année des transactions de recettes et de dépenses de l'association pour l'année précédente, est remplie par le conseil d'administration de l'association et soumise par le président de l'association à l'autorité administrative locale (préfecture/sous-préfecture) dans les quatre premiers mois de chaque année civile.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4800 -->
+[BAŞLIK]
+Obligation de Notification
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4801 -->
+[MADDE 20]
+Les notifications à effectuer à l'autorité administrative locale ;
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4802 -->
+[BAŞLIK]
+Notification des Résultats de l'Assemblée Générale
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4803 -->
+[PARAGRAF]
+Dans les trente jours suivant les réunions ordinaires ou extraordinaires de l'assemblée générale, la « Notification des Résultats de l'Assemblée Générale » (présentée à l'Annexe-3 du Règlement des Associations) contenant les membres titulaires et suppléants élus au conseil d'administration, au conseil de surveillance et aux autres organes, ainsi que ses annexes, sont notifiées à l'autorité administrative locale par le président du conseil d'administration :
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4804 -->
+[PARAGRAF]
+Sont joints à la notification des résultats de l'assemblée générale :
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4805 -->
+[LİSTE_MADDESİ 1.]
+Une copie du procès-verbal de la réunion de l'assemblée générale signée par le président du bureau, les vice-présidents et le secrétaire,
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4806 -->
+[LİSTE_MADDESİ 2.]
+Si une modification des statuts a été apportée, les anciennes et nouvelles versions des articles modifiés des statuts et une copie de la version finale des statuts de l'association dont chaque page est signée par le conseil d'administration sont jointes.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4807 -->
+[BAŞLIK]
+Notification des Biens Immobiliers
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4808 -->
+[PARAGRAF]
+Les biens immobiliers acquis par l'association sont notifiés à l'autorité administrative locale dans les trente jours suivant leur inscription au registre foncier en remplissant la « Notification de Bien Immobilier » (présentée à l'Annexe-26 du Règlement des Associations).
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4809 -->
+[BAŞLIK]
+Notification de Réception d'Aide de l'Étranger
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda480a -->
+[PARAGRAF]
+Dans le cas où une aide doit être reçue de l'étranger par l'association, ils remplissent la « Notification de Réception d'Aide de l'Étranger » (indiquée à l'Annexe-4 du Règlement des Associations) en deux exemplaires et la notifient à l'autorité administrative locale avant de recevoir l'aide. Une copie de la décision du conseil d'administration prise concernant la réception de l'aide de l'étranger, le protocole, le contrat et les documents similaires élaborés à ce sujet, le cas échéant, ainsi qu'une copie du reçu, de l'extrait de compte et de tout document similaire concernant le compte sur lequel l'aide a été transférée sont également joints au formulaire de notification. Les aides en espèces doivent obligatoirement être reçues par l'intermédiaire des banques et la condition de notification doit être remplie avant utilisation.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda480b -->
+[PARAGRAF]
+Notification Concernant les Projets Conjoints Menés Avec des Institutions et Organisations Publiques Une copie du protocole et du projet relatifs aux projets conjoints menés avec des institutions et organisations publiques sur des sujets relevant du domaine de compétence de l'association est jointe à la « Notification de Projet » (présentée à l'Annexe-23 du Règlement des Associations) et soumise à la préfecture du lieu où se trouve le siège de l'association dans un délai d'un mois à compter de la date du protocole.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda480c -->
+[BAŞLIK]
+Notification des Modifications
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda480d -->
+[PARAGRAF]
+La modification intervenant dans le lieu d'établissement de l'association est notifiée en remplissant la « Notification de Modification du Lieu d'Établissement » (indiquée à l'Annexe-24 du Règlement des Associations) ; les modifications intervenant dans les organes de l'association en dehors de la réunion de l'assemblée générale sont notifiées en remplissant la « Notification des Modifications dans les Organes de l'Association » (indiquée à l'Annexe-25 du Règlement des Associations), à l'autorité administrative locale dans les trente jours suivant la modification. Les modifications apportées aux statuts de l'association sont également notifiées à l'autorité administrative locale en annexe à la notification des résultats de l'assemblée générale dans les trente jours suivant la réunion de l'assemblée générale au cours de laquelle la modification des statuts a été apportée.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda480e -->
+[BAŞLIK]
+Audit Interne de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda480f -->
+[MADDE 21]
+Au sein de l'association, un audit interne peut être réalisé par l'assemblée générale, le conseil d'administration ou le conseil de surveillance, et un audit peut également être confié à des cabinets d'audit indépendants. Le fait qu'un audit ait été réalisé par l'assemblée générale, le conseil d'administration ou des cabinets d'audit indépendants n'élimine pas l'obligation du conseil de surveillance. L'audit de l'association est effectué par le conseil de surveillance au moins une fois par an. L'assemblée générale ou le conseil d'administration peuvent réaliser un audit ou confier un audit à des cabinets d'audit indépendants lorsque cela est jugé nécessaire.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4810 -->
+[BAŞLIK]
+Procédures d'Emprunt de l'Association
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4811 -->
+[MADDE 22]
+Si cela est nécessaire pour réaliser le but de l'association et mener à bien ses activités, l'association peut emprunter par décision du conseil d'administration. Cet emprunt peut concerner l'achat de biens et de services à crédit, ou il peut être fait en espèces. Cependant, cet emprunt ne peut être effectué pour des montants qui ne peuvent pas être couverts par les sources de revenus de l'association et d'une nature qui mettrait l'association en difficulté de paiement. L'Assemblée Générale est compétente pour les emprunts dépassant ce montant, à condition qu'ils ne dépassent pas la moitié du dernier compte définitif. Le droit d'autorisation d'emprunt que l'Assemblée Générale peut accorder au conseil d'administration en contrepartie d'un projet est réservé.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4812 -->
+[BAŞLIK]
+Comment Modifier les Statuts
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4813 -->
+[MADDE 23]
+La modification des statuts peut être effectuée par une décision de l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4814 -->
+[PARAGRAF]
+Une majorité des 2/3 des membres ayant le droit d'assister à l'assemblée générale est requise pour procéder à une modification des statuts lors de l'assemblée générale. En cas de report de la réunion faute de quorum, la majorité n'est pas requise lors de la deuxième réunion. Cependant, le nombre de membres participant à cette réunion ne peut être inférieur au double du nombre total des membres du conseil d'administration et du conseil de surveillance.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4815 -->
+[PARAGRAF]
+La majorité de décision requise pour la modification des statuts est de 2/3 des voix des membres participant à la réunion et ayant le droit de vote. Le vote pour la modification des statuts s'effectue à main levée lors de l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4816 -->
+[BAŞLIK]
+Dissolution de l'Association et Forme de Liquidation de Ses Actifs
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4817 -->
+[MADDE 24]
+L'assemblée générale peut toujours décider de dissoudre l'association.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4818 -->
+[PARAGRAF]
+Afin de discuter de la question de la dissolution à l'assemblée générale, une majorité des 2/3 des membres ayant le droit de participer à l'assemblée générale est requise. En cas de report de la réunion faute de quorum, la majorité n'est pas requise lors de la deuxième réunion. Cependant, le nombre de membres participant à cette réunion ne peut être inférieur au double du nombre total des membres du conseil d'administration et du conseil de surveillance.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4819 -->
+[PARAGRAF]
+La majorité de décision requise pour qu'une décision de dissolution soit prise est de 2/3 des voix des membres participant à la réunion et ayant le droit de vote. Le vote sur la décision de dissolution s'effectue à main levée à l'assemblée générale.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda481a -->
+[BAŞLIK]
+Procédures de Liquidation
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda481b -->
+[PARAGRAF]
+Lorsqu'une décision de dissolution est prononcée par l'assemblée générale, la liquidation des fonds, des biens et des droits de l'association est effectuée par le comité de liquidation composé des membres du dernier conseil d'administration. Ces procédures commencent à partir de la date à laquelle la décision de l'assemblée générale concernant la dissolution a été prise ou que le cas de résiliation automatique devient définitif.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda481c -->
+[PARAGRAF]
+Pendant la période de liquidation, la mention « Association Yapboz en Liquidation » est utilisée au nom de l'association dans toutes les transactions. Le comité de liquidation est chargé et autorisé à mener à bien, du début à la fin, les procédures de liquidation des fonds, biens et droits de l'association, conformément à la législation. Ce comité examine d'abord les comptes de l'association. Au cours de l'examen, les livres, reçus, documents de dépenses, registres fonciers et bancaires et autres documents appartenant à l'association sont identifiés, et ses actifs et passifs sont consignés dans un procès-verbal. Lors des procédures de liquidation, un appel est lancé aux créanciers de l'association, et s'il y a lieu, ses biens sont convertis en argent et payés aux créanciers. Si l'association est créancière, les créances sont recouvrées. Après le recouvrement des créances et le paiement des dettes, tous les fonds, biens et droits restants sont transférés au lieu déterminé par l'assemblée générale. Si le lieu de transfert n'a pas été déterminé par l'assemblée générale, ils sont transférés à l'association de la province où se trouve l'association, dont le but est le plus proche et qui compte le plus grand nombre de membres à la date de sa dissolution.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda481d -->
+[PARAGRAF]
+Toutes les transactions concernant la liquidation sont indiquées dans le procès-verbal de liquidation, et les procédures de liquidation sont achevées dans un délai de trois mois, à l'exception des délais supplémentaires accordés par les autorités administratives locales pour un motif justifié. À la suite de l'achèvement des procédures de liquidation et de transfert des fonds, des biens et des droits de l'association, il est obligatoire pour le comité de liquidation de signaler la situation par écrit à l'autorité administrative locale du lieu où se trouve le siège de l'association dans un délai de sept jours, et de joindre le procès-verbal de liquidation à cette lettre. Les membres du dernier conseil d'administration, en leur qualité de comité de liquidation, sont chargés de conserver les livres et documents de l'association. Cette mission peut également être confiée à un membre du conseil d'administration. La durée de conservation de ces livres et documents est de cinq ans.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda481e -->
+[BAŞLIK]
+Absence de Disposition
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda481f -->
+[MADDE 25]
+Pour les questions non spécifiées dans ces statuts, s'appliquent les dispositions de la Loi sur les Associations, du Code Civil Turc, du Règlement des Associations publié en référence à ces Lois, et des autres législations pertinentes concernant les associations.
+
+<!-- BLOCK_ID: 6a2fab520623d7c6edda4820 -->
+[PARAGRAF]
+Ces statuts se composent de 25 (Vingt-cinq) articles.
