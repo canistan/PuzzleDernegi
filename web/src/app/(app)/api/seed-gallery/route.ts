@@ -71,12 +71,12 @@ export async function GET() {
     if (uploadedMediaIds.length > 0) {
       // Create a gallery album
       const album = await payload.create({
-        collection: 'galleryAlbums',
+        collection: 'albums',
         data: {
           title: 'Genel Etkinlikler Albümü',
           date: new Date().toISOString(),
           coverImage: uploadedMediaIds[0],
-          images: uploadedMediaIds.map(id => ({ image: id })) as any
+          images: uploadedMediaIds
         }
       });
       
