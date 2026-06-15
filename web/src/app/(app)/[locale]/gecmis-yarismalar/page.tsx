@@ -55,6 +55,7 @@ export default async function GecmisYarismalar(props: { params: Promise<{ locale
                     borderBottom: comp.type === 'details' ? '2px solid #F1F5F9' : 'none', 
                     paddingBottom: comp.type === 'details' ? '0.75rem' : '0', 
                     marginBottom: '1rem',
+                    textAlign: comp.type === 'winners' ? 'center' : 'left',
                   }}>
                     {comp.title}
                   </h2>
@@ -93,28 +94,28 @@ export default async function GecmisYarismalar(props: { params: Promise<{ locale
                 )}
 
                 {comp.type === 'winners' && (
-                  <>
+                  <div style={{ textAlign: 'center' }}>
                     {comp.winnersList && comp.winnersList.length > 0 && (
-                      <ol style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', color: '#334155' }}>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.4rem', color: '#334155' }}>
                         {comp.winnersList.map((w: any, wIndex: number) => (
                           <li key={wIndex} style={{ fontSize: '0.95rem' }}>{w.name}</li>
                         ))}
-                      </ol>
+                      </ul>
                     )}
                     
                     {comp.specialAwards && comp.specialAwards.length > 0 && (
                       <div style={{ marginTop: '1.25rem' }}>
                         {comp.specialAwards.map((s: any, sIndex: number) => (
                           <div key={sIndex} style={{ marginBottom: '1rem' }}>
-                            <h3 style={{ color: '#FF6B35', fontSize: '1.1rem' }}>{s.awardName}</h3>
-                            <ol style={{ paddingLeft: '1.5rem', color: '#334155' }}>
-                              <li>{s.winner}</li>
-                            </ol>
+                            <h3 style={{ color: '#FF6B35', fontSize: '1.1rem', marginBottom: '0.25rem' }}>{s.awardName}</h3>
+                            <div style={{ color: '#334155', fontSize: '0.95rem' }}>
+                              {s.winner}
+                            </div>
                           </div>
                         ))}
                       </div>
                     )}
-                  </>
+                  </div>
                 )}
 
                 {comp.type === 'image' && (
