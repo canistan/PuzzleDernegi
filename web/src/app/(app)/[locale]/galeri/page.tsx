@@ -19,10 +19,6 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
     locale: locale as any,
   });
 
-  const galleryPhotosGlobal = await payload.findGlobal({
-    slug: 'galleryPage',
-    locale: locale as any,
-  }).catch(() => null) as any;
 
   const t = await getTranslations('gallery');
 
@@ -60,10 +56,7 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
         <pre style={{ display: 'none' }} id="debug-info">
           {JSON.stringify({
             locale,
-            galleryPhotosGlobalLength: galleryPhotosGlobal?.photos?.length,
             singleAlbumId: albums[0]?.id,
-            filteredPhotos: galleryPhotosGlobal?.photos?.filter((p: any) => p.album === albums[0]?.id || p.album?.id === albums[0]?.id)?.length,
-            firstPhotoUrl: galleryPhotosGlobal?.photos?.[0]?.image?.url,
           }, null, 2)}
         </pre>
 
@@ -86,20 +79,6 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
             });
           });
 
-          const globalPhotos = galleryPhotosGlobal?.photos || [];
-          globalPhotos.forEach((p: any) => {
-            const media = p.image;
-            const albumId = p.album?.id || p.album;
-            if (media && media.url) {
-              allImages.push({
-                src: media.url,
-                alt: media.alt || 'Galeri Görseli',
-                width: media.width || 800,
-                height: media.height || 600,
-                albumId: typeof albumId === 'string' ? albumId : (albumId ? String(albumId) : undefined),
-              });
-            }
-          });
 
           const albumData = albums.map(a => ({ id: String(a.id), title: a.title }));
 

@@ -832,40 +832,7 @@ export default buildConfig({
         },
       ]
     },
-    {
-      slug: 'galleryPage',
-      label: 'Fotoğraflar',
-      admin: { group: 'Yönetim' },
-      access: { read: () => true },
-      fields: [
-        {
-          name: 'photos',
-          type: 'array',
-          label: 'Galeri Fotoğrafları',
-          admin: {
-            components: {
-              Field: '/src/components/admin/GalleryGrid#default',
-            }
-          },
-          fields: [
-            {
-              name: 'image',
-              type: 'upload',
-              relationTo: 'media',
-              label: 'Fotoğraf',
-              required: true,
-            },
-            {
-              name: 'album',
-              type: 'relationship',
-              relationTo: 'albums',
-              label: 'Albüm',
-            },
-          ]
-        },
-        
-      ]
-    },
+
     {
       slug: 'membershipPage',
       label: 'Üyelik',
