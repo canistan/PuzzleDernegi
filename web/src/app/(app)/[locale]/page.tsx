@@ -117,9 +117,13 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
 
   const renderSponsors = () => {
     if (customSponsors && customSponsors.length > 0) {
+      const visibleSponsors = customSponsors.filter((sponsor: any) => !sponsor.isHidden);
+      
+      if (visibleSponsors.length === 0) return null;
+
       return (
         <div style={{ display: 'flex', gap: '1.5rem', paddingRight: '1.5rem', alignItems: 'center' }}>
-          {customSponsors.map((sponsor: any, idx: number) => {
+          {visibleSponsors.map((sponsor: any, idx: number) => {
             if (sponsor.type === 'preset' && sponsor.presetType) {
               return renderPresetSponsor(sponsor.presetType, idx);
             }

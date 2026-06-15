@@ -511,6 +511,15 @@ export default buildConfig({
                   },
                   fields: [
                     {
+                      name: 'isHidden',
+                      type: 'checkbox',
+                      label: 'Sponsoru Gizle',
+                      defaultValue: false,
+                      admin: {
+                        description: 'Sponsoru silmeden sitede gizlemek için bunu işaretleyin.',
+                      }
+                    },
+                    {
                       name: 'name',
                       type: 'text',
                       label: 'Sponsor İsmi / Etiketi (Panelde takip etmek için)',
