@@ -46,9 +46,9 @@ export async function GET() {
     });
 
     // 2. Seed Bylaws Page
-    const blocks = tuzukData.map((madde) => ({
+    const blocks = tuzukData.map((madde: any) => ({
       blockType: 'madde',
-      maddeNo: madde.number,
+      maddeNo: madde.maddeNo || madde.number || '',
       content: madde.content,
     }));
 
