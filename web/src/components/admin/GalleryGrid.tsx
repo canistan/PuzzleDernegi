@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useState, useRef } from 'react'
 
 interface MediaDoc {
-  id: number
+  id: string | number
   url?: string
   thumbnailURL?: string
   alt?: string
@@ -11,14 +11,14 @@ interface MediaDoc {
 }
 
 interface AlbumDoc {
-  id: number
+  id: string | number
   title: string
 }
 
 interface PhotoItem {
   id?: string
-  image: number | MediaDoc
-  album?: number | AlbumDoc | null
+  image: string | number | MediaDoc
+  album?: string | number | AlbumDoc | null
 }
 
 const GalleryGridField: React.FC<any> = () => {
@@ -32,8 +32,8 @@ const GalleryGridField: React.FC<any> = () => {
   const fetchData = useCallback(async () => {
     try {
       const [galleryRes, albumsRes] = await Promise.all([
-        fetch('/api/globals/galleryPage?depth=1'),
-        fetch('/api/albums?limit=100'),
+        fetch('/api/globals/galleryPage?depth=1', { cache: 'no-store' }),
+        fetch('/api/albums?limit=100', { cache: 'no-store' }),
       ])
       const galleryData = await galleryRes.json()
       const albumsData = await albumsRes.json()
@@ -77,7 +77,7 @@ const GalleryGridField: React.FC<any> = () => {
     const updated = [...photos]
     updated[index] = {
       ...updated[index],
-      album: albumId ? Number(albumId) : null,
+      album: albumId ? albumId : null,
     }
     setPhotos(updated)
     await savePhotos(updated)
@@ -269,9 +269,10 @@ const GalleryGridField: React.FC<any> = () => {
                   }}
                 >
                   <option value="">Albüm seç...</option>
-                  {albums.map(a => (
-                    <option key={a.id} value={String(a.id)}>{a.title}</option>
-                  ))}
+                  {albums.map(a => {
+                    const titleStr = typeof a.title === 'string' ? a.title : (a.title as any)?.tr || (a.title as any)?.en || 'İsimsiz Albüm';
+                    return <option key={a.id} value={String(a.id)}>{titleStr}</option>
+                  })}
                 </select>
 
                 <button
