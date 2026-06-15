@@ -67,7 +67,7 @@ export default buildConfig({
         },
         {
           name: 'images',
-          type: 'relationship',
+          type: 'upload',
           relationTo: 'media',
           hasMany: true,
           label: 'Albüm Fotoğrafları (Toplu Seçim)',

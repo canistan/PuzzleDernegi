@@ -24,7 +24,7 @@ export async function GET() {
       'torium.jpg'
     ];
 
-    const uploadedMediaIds: number[] = [];
+    const uploadedMediaIds: any[] = [];
 
     for (const imgName of imagesToUpload) {
       try {
