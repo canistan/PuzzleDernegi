@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function NewsletterForm() {
+  const t = useTranslations('newsletter');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -26,25 +28,25 @@ export default function NewsletterForm() {
         const errorData = await res.json();
         // If it's a duplicate email error from Payload CMS
         if (errorData.errors?.[0]?.data?.[0]?.field === 'email') {
-            throw new Error('Bu e-posta adresi zaten bültene kayıtlı.');
+            throw new Error(t('error'));
         }
-        throw new Error('Kayıt olurken bir hata oluştu.');
+        throw new Error(t('error'));
       }
 
       setStatus('success');
-      setMessage('Bültene başarıyla abone oldunuz!');
+      setMessage(t('success'));
       setEmail('');
     } catch (err: any) {
       setStatus('error');
-      setMessage(err.message || 'Bir hata oluştu.');
+      setMessage(t('error'));
     }
   };
 
   return (
     <div>
-      <h4 className="text-lg font-bold text-slate-800 mb-3 text-[var(--primary)]">Yeniliklerden Haberdar Olun</h4>
+      <h4 className="text-lg font-bold text-slate-800 mb-3 text-[var(--primary)]">{t('title')}</h4>
       <p className="text-sm text-slate-500 mb-4">
-        Yeni yarışmalar, etkinlikler ve duyurulardan anında haberdar olmak için e-bültenimize abone olun.
+        {t('description')}
       </p>
       
       <form onSubmit={handleSubmit} className="relative max-w-md">
@@ -53,7 +55,7 @@ export default function NewsletterForm() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-posta adresiniz"
+            placeholder={t('placeholder')}
             disabled={status === 'loading' || status === 'success'}
             className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent text-sm disabled:bg-slate-100 disabled:text-slate-500"
             required
@@ -63,7 +65,7 @@ export default function NewsletterForm() {
             disabled={status === 'loading' || status === 'success'}
             className="px-5 py-2.5 bg-gradient-to-r from-[#FF6B35] to-orange-500 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-sm whitespace-nowrap"
           >
-            {status === 'loading' ? 'Kayıt...' : 'Abone Ol'}
+            {status === 'loading' ? '...' : t('subscribe')}
           </button>
         </div>
         

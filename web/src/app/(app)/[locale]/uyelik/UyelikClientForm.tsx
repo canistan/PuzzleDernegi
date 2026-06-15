@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function UyelikClientForm({ title, subtitle, formSettings }: { title: string, subtitle: string, formSettings: any[] }) {
   const router = useRouter();
+  const t = useTranslations('membership');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
 
@@ -58,10 +60,10 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
         <div className="section-header animate-fade-in">
           <div className="section-divider" />
           <h1 style={{ marginTop: '1rem' }}>
-            {title}
+            {title || t('title')}
           </h1>
           <p>
-            {subtitle}
+            {subtitle || t('subtitle')}
           </p>
         </div>
 
@@ -76,59 +78,59 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
             
             {/* Section 1: Kişisel Bilgiler */}
             <section>
-              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">1. Kişisel Bilgiler</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">{t('personalInfo')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Adınız *</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('firstName')}</label>
                   <input type="text" name="firstName" required className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Soyadınız *</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('lastName')}</label>
                   <input type="text" name="lastName" required className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 {isVisible('tcNo') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">TC Kimlik No {isRequired('tcNo') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('idNumber')} {isRequired('tcNo') && '*'}</label>
                   <input type="text" name="tcNo" required={isRequired('tcNo')} maxLength={11} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('birthDate') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Doğum Tarihi {isRequired('birthDate') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('birthDate')} {isRequired('birthDate') && '*'}</label>
                   <input type="date" name="birthDate" required={isRequired('birthDate')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('gender') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Cinsiyet {isRequired('gender') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('gender')} {isRequired('gender') && '*'}</label>
                   <select name="gender" required={isRequired('gender')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white">
-                    <option value="">Seçiniz...</option>
-                    <option value="female">Kadın</option>
-                    <option value="male">Erkek</option>
+                    <option value="">{t('genderSelect')}</option>
+                    <option value="female">{t('genderFemale')}</option>
+                    <option value="male">{t('genderMale')}</option>
                   </select>
                 </div>
                 )}
                 {isVisible('bloodType') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Kan Grubu {isRequired('bloodType') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('bloodGroup')} {isRequired('bloodType') && '*'}</label>
                   <input type="text" name="bloodType" required={isRequired('bloodType')} placeholder="Örn: 0 RH+" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('motherName') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Anne Adı {isRequired('motherName') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('motherName')} {isRequired('motherName') && '*'}</label>
                   <input type="text" name="motherName" required={isRequired('motherName')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('fatherName') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Baba Adı {isRequired('fatherName') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('fatherName')} {isRequired('fatherName') && '*'}</label>
                   <input type="text" name="fatherName" required={isRequired('fatherName')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('birthPlace') && (
                   <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Doğum Yeri {isRequired('birthPlace') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('birthPlace')} {isRequired('birthPlace') && '*'}</label>
                   <input type="text" name="birthPlace" required={isRequired('birthPlace')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
@@ -137,39 +139,39 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
 
             {/* Section 2: İletişim */}
             <section>
-              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">2. İletişim & Eğitim</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">{t('contactAndEducation')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {isVisible('email') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">E-Mail Adresi {isRequired('email') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('email')} {isRequired('email') && '*'}</label>
                   <input type="email" name="email" required={isRequired('email')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('phone') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Cep Telefonu {isRequired('phone') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('phone')} {isRequired('phone') && '*'}</label>
                   <input type="tel" name="phone" required={isRequired('phone')} placeholder="05XX XXX XX XX" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Yerleşim (İkametgah) Adresi {isRequired('address') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('address')} {isRequired('address') && '*'}</label>
                   <textarea name="address" required={isRequired('address')} rows={3} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none resize-y"></textarea>
                 </div>
                 {isVisible('workAddress') && (
                   <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">İş Adresi {isRequired('workAddress') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('workInfo')} {isRequired('workAddress') && '*'}</label>
                   <textarea name="workAddress" required={isRequired('workAddress')} rows={2} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none resize-y"></textarea>
                 </div>
                 )}
                 {isVisible('profession') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Meslek {isRequired('profession') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('profession')} {isRequired('profession') && '*'}</label>
                   <input type="text" name="profession" required={isRequired('profession')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
                 {isVisible('educationStatus') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Öğrenim Durumu {isRequired('educationStatus') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('education')} {isRequired('educationStatus') && '*'}</label>
                   <input type="text" name="educationStatus" required={isRequired('educationStatus')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none" />
                 </div>
                 )}
@@ -182,15 +184,15 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {isVisible('puzzleCount') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Şimdiye Kadar Yaptığınız Puzzle Sayısı {isRequired('puzzleCount') && '*'}</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('puzzlesCount')} {isRequired('puzzleCount') && '*'}</label>
                   <select name="puzzleCount" required={isRequired('puzzleCount')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white">
-                    <option value="">Seçiniz...</option>
+                    <option value="">{t('genderSelect')}</option>
                     <option value="1-5">1 - 5</option>
                     <option value="6-10">6 - 10</option>
                     <option value="11-20">11 - 20</option>
                     <option value="21-50">21 - 50</option>
                     <option value="51-100">51 - 100</option>
-                    <option value="100+">100 ve Daha fazla</option>
+                    <option value="100+">100+</option>
                   </select>
                 </div>
                 )}
@@ -230,7 +232,7 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
                     <input type="checkbox" name="kvkkAccepted" required className="w-5 h-5 text-orange-500 rounded border-slate-300 focus:ring-orange-500 cursor-pointer" />
                   </div>
                   <span className="text-sm text-slate-600 group-hover:text-slate-900 transition-colors">
-                    Kişisel verilerimin KVKK aydınlatma metni kapsamında işlenmesini onaylıyorum. *
+                    {t('declaration2')} *
                   </span>
                 </label>
                 <label className="flex items-start gap-4 cursor-pointer group">
@@ -238,7 +240,7 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
                     <input type="checkbox" name="agreementAccepted" required className="w-5 h-5 text-orange-500 rounded border-slate-300 focus:ring-orange-500 cursor-pointer" />
                   </div>
                   <span className="text-sm text-slate-600 group-hover:text-slate-900 transition-colors">
-                    Dernek üyelik sözleşmesini ve tüzüğünü okudum, kabul ediyorum. *
+                    {t('declaration1')} *
                   </span>
                 </label>
               </div>
@@ -259,10 +261,10 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
-                  Kaydediliyor...
+                  ...
                 </>
               ) : (
-                'Başvuruyu Tamamla'
+                t('submit')
               )}
             </button>
 
