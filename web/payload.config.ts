@@ -97,6 +97,7 @@ export default buildConfig({
       access: {
         create: () => true, // Allow anyone to subscribe
         update: () => false, // Read only in admin
+        delete: () => false, // No deleting from admin
       },
       fields: [
         {
@@ -122,6 +123,7 @@ export default buildConfig({
       access: {
         create: () => true, // Allow public form submissions
         update: () => false, // Read only in admin
+        delete: () => false, // No deleting from admin
       },
       fields: [
         {
@@ -181,6 +183,7 @@ export default buildConfig({
       access: {
         create: () => true, // Allow public form submissions
         update: () => false, // Read only in admin
+        delete: () => false, // No deleting from admin
       },
       fields: [
         {
