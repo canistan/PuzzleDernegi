@@ -9,7 +9,7 @@ export async function generateMetadata(props: { params: Promise<{ id: string, lo
   const payload = await getPayload({ config: configPromise });
   try {
     const params = await props.params;
-    const album = await payload.findByID({ collection: 'albums', id: Number(params.id), locale: params.locale as any });
+    const album = await payload.findByID({ collection: 'albums', id: params.id, locale: params.locale as any });
     return { title: `${album.title} | Puzzle Derneği` };
   } catch {
     return { title: 'Albüm | Puzzle Derneği' };
@@ -24,7 +24,7 @@ export default async function AlbumDetail(props: { params: Promise<{ id: string,
   try {
     album = await payload.findByID({
       collection: 'albums',
-      id: Number(params.id),
+      id: params.id,
       locale: params.locale as any,
     });
   } catch {
@@ -34,8 +34,17 @@ export default async function AlbumDetail(props: { params: Promise<{ id: string,
   const dateObj = new Date(album.date);
   const formattedDate = dateObj.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
   
-  const images = (album.images || []).map((img: any) => {
-    const media = img as any;
+  const galleryPhotosGlobal = await payload.findGlobal({
+    slug: 'galleryPage',
+    locale: params.locale as any,
+  }).catch(() => null) as any;
+
+  const galleryPhotos = galleryPhotosGlobal?.photos?.filter((p: any) => p.album === album.id || p.album?.id === album.id) || [];
+  const albumImages = (album.images || []).map((img: any) => img as any);
+  const extraImages = galleryPhotos.map((p: any) => p.image);
+  const allImages = [...albumImages, ...extraImages];
+
+  const images = allImages.map((media: any) => {
     return {
       src: media.url!,
       alt: media.alt || album.title,

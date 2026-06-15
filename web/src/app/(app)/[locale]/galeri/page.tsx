@@ -19,6 +19,11 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
     locale: locale as any,
   });
 
+  const galleryPhotosGlobal = await payload.findGlobal({
+    slug: 'galleryPage',
+    locale: locale as any,
+  }).catch(() => null) as any;
+
   const t = await getTranslations('gallery');
 
   const albumsRes = await payload.find({
@@ -58,8 +63,13 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
         ) : albums.length === 1 ? (
           (() => {
             const singleAlbum = albums[0];
-            const images = (singleAlbum.images || []).map((img: any) => {
-              const media = img as any;
+            const galleryPhotos = galleryPhotosGlobal?.photos?.filter((p: any) => p.album === singleAlbum.id || p.album?.id === singleAlbum.id) || [];
+            
+            const albumImages = (singleAlbum.images || []).map((img: any) => img as any);
+            const extraImages = galleryPhotos.map((p: any) => p.image);
+            const allImages = [...albumImages, ...extraImages];
+
+            const images = allImages.map((media: any) => {
               return {
                 src: media.url!,
                 alt: media.alt || singleAlbum.title,
@@ -82,7 +92,8 @@ export default async function Galeri(props: { params: Promise<{ locale: string }
               const cover = album.coverImage as any;
               const dateObj = new Date(album.date);
               const formattedDate = dateObj.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
-              const photoCount = Array.isArray(album.images) ? album.images.length : 0;
+              const galleryPhotos = galleryPhotosGlobal?.photos?.filter((p: any) => p.album === album.id || p.album?.id === album.id) || [];
+              const photoCount = (Array.isArray(album.images) ? album.images.length : 0) + galleryPhotos.length;
               
               return (
                 <Link 
