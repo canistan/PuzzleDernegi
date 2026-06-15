@@ -13,7 +13,9 @@
     "contactAndSocial": "Kontakt & Soziale Medien",
     "email": "E-Mail",
     "allRightsReserved": "Alle Rechte vorbehalten.",
-    "footerDescription": "Der offizielle Verein, der alle Puzzle-Enthusiasten in der Türkei zusammenbringt und Wettbewerbe organisiert."
+    "footerDescription": "Der offizielle Verein, der alle Puzzle-Enthusiasten in der Türkei zusammenbringt und Wettbewerbe organisiert.",
+    "chooseFile": "Datei auswählen",
+    "noFileChosen": "Keine Datei ausgewählt"
   },
   "contact": {
     "title": "Kontakt",

@@ -13,7 +13,9 @@
     "contactAndSocial": "İletişim & Sosyal Medya",
     "email": "E-posta",
     "allRightsReserved": "Tüm hakları saklıdır.",
-    "footerDescription": "Türkiye'deki tüm puzzle severleri bir araya getiren ve yarışmalar düzenleyen resmi dernek."
+    "footerDescription": "Türkiye'deki tüm puzzle severleri bir araya getiren ve yarışmalar düzenleyen resmi dernek.",
+    "chooseFile": "Dosya Seç",
+    "noFileChosen": "Dosya seçilmedi"
   },
   "contact": {
     "title": "İletişim",

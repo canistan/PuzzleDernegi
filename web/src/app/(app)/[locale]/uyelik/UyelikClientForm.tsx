@@ -7,8 +7,11 @@ import { useTranslations } from 'next-intl';
 export default function UyelikClientForm({ title, subtitle, formSettings }: { title: string, subtitle: string, formSettings: any[] }) {
   const router = useRouter();
   const t = useTranslations('membership');
+  const tCommon = useTranslations('common');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
+  const [photoName, setPhotoName] = useState('');
+  const [identityCardName, setIdentityCardName] = useState('');
 
   const isVisible = (name: string) => {
     // If formSettings is empty, default to true for backward compatibility or simple fallback
@@ -213,13 +216,25 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
                   <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-2">{t('photoLabel')} {isRequired('photo') && '*'}</label>
                   <p className="text-xs text-slate-500 mb-2">{t('photoDesc')}</p>
-                  <input type="file" name="photo" required={isRequired('photo')} accept="image/*" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
+                  <div className="relative group">
+                    <input type="file" name="photo" required={isRequired('photo')} accept="image/*" onChange={(e) => setPhotoName(e.target.files?.[0]?.name || '')} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+                    <div className="w-full px-4 py-3 rounded-lg border border-slate-300 group-focus-within:ring-2 group-focus-within:ring-orange-400 group-focus-within:border-transparent transition-all bg-white flex items-center">
+                      <span className="mr-4 py-1 px-4 rounded-full text-sm font-semibold bg-orange-50 text-orange-600 transition-colors group-hover:bg-orange-100">{tCommon('chooseFile')}</span>
+                      <span className={`text-sm truncate ${photoName ? 'text-slate-800' : 'text-slate-500'}`}>{photoName || tCommon('noFileChosen')}</span>
+                    </div>
+                  </div>
                 </div>
                 )}
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-2">{t('identityCardLabel')} {isRequired('identityCard') && '*'}</label>
                   <p className="text-xs text-slate-500 mb-2">{t('identityCardDesc')}</p>
-                  <input type="file" name="identityCard" required={isRequired('identityCard')} accept="image/*,application/pdf" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
+                  <div className="relative group">
+                    <input type="file" name="identityCard" required={isRequired('identityCard')} accept="image/*,application/pdf" onChange={(e) => setIdentityCardName(e.target.files?.[0]?.name || '')} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+                    <div className="w-full px-4 py-3 rounded-lg border border-slate-300 group-focus-within:ring-2 group-focus-within:ring-orange-400 group-focus-within:border-transparent transition-all bg-white flex items-center">
+                      <span className="mr-4 py-1 px-4 rounded-full text-sm font-semibold bg-orange-50 text-orange-600 transition-colors group-hover:bg-orange-100">{tCommon('chooseFile')}</span>
+                      <span className={`text-sm truncate ${identityCardName ? 'text-slate-800' : 'text-slate-500'}`}>{identityCardName || tCommon('noFileChosen')}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>

@@ -13,7 +13,9 @@
     "contactAndSocial": "Contact & Social Media",
     "email": "Email",
     "allRightsReserved": "All rights reserved.",
-    "footerDescription": "The official association bringing together all puzzle enthusiasts in Turkey and organizing competitions."
+    "footerDescription": "The official association bringing together all puzzle enthusiasts in Turkey and organizing competitions.",
+    "chooseFile": "Choose File",
+    "noFileChosen": "No file chosen"
   },
   "contact": {
     "title": "Contact",
