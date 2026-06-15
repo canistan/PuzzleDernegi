@@ -1,25 +1,20 @@
-import { getPayload } from 'payload';
-import configPromise from '../../../../../payload.config';
 import { NextResponse } from 'next/server';
+import mongoose from 'mongoose';
 
 export async function GET() {
   try {
-    const payload = await getPayload({ config: configPromise });
-    
-    // Delete all albums
-    const albums = await payload.find({
-      collection: 'albums',
-      limit: 100,
-    });
-
-    for (const album of albums.docs) {
-      await payload.delete({
-        collection: 'albums',
-        id: album.id,
-      });
+    if (!mongoose.connection.readyState) {
+      await mongoose.connect(process.env.MONGODB_URI!);
     }
-
-    return NextResponse.json({ success: true, message: `Deleted ${albums.docs.length} albums` });
+    
+    // Clear albums directly
+    const db = mongoose.connection.db;
+    if (db) {
+      const collection = db.collection('albums');
+      const result = await collection.deleteMany({});
+      return NextResponse.json({ success: true, message: `Deleted ${result.deletedCount} albums directly from DB` });
+    }
+    return NextResponse.json({ success: false, message: 'DB not found' });
   } catch (error: any) {
     console.error(error);
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
