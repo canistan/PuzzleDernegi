@@ -35,11 +35,20 @@ export default function LanguageSwitcher() {
     setIsOpen(false);
     if (nextLocale === locale) return;
     
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-    const newPath = `/${nextLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
+    let pathWithoutLocale = pathname;
+    if (pathname.startsWith(`/${locale}/`)) {
+      pathWithoutLocale = pathname.replace(`/${locale}/`, '/');
+    } else if (pathname === `/${locale}`) {
+      pathWithoutLocale = '/';
+    }
+
+    // For default locale 'tr', next-intl might not want the prefix if as-needed
+    const newPath = nextLocale === 'tr' 
+      ? pathWithoutLocale 
+      : `/${nextLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
 
     startTransition(() => {
-      router.replace(newPath);
+      window.location.href = newPath;
     });
   };
 
