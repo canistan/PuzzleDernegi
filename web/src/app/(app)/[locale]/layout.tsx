@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +41,18 @@ export const metadata: Metadata = {
   },
 };
 
+export function generateStaticParams() {
+  return [
+    { locale: 'tr' },
+    { locale: 'en' },
+    { locale: 'de' },
+    { locale: 'fr' },
+    { locale: 'ru' }
+  ];
+}
+
+export const revalidate = 60;
+
 export default async function RootLayout({
   children,
   params,
@@ -49,6 +61,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages();
   return (
     <html lang={locale} className={inter.className}>

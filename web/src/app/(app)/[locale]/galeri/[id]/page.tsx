@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';

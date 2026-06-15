@@ -29,7 +29,8 @@
   "gallery": {
     "noAlbums": "No albums available yet.",
     "noPhotos": "No photos in this album yet.",
-    "photos": "Photos"
+    "photos": "Photos",
+    "all": "All"
   },
   "competitions": {
     "noData": "Past competition data has not been added yet."
@@ -109,6 +110,32 @@
     "no": "No",
     "declaration1": "I have read and accept the association bylaws.",
     "declaration2": "I consent to the processing of my personal data.",
-    "submit": "Complete Registration"
+    "submit": "Complete Registration",
+    "puzzleExperience": "3. Puzzle Experience",
+    "favoritePuzzleBrandsLabel": "Preferred Puzzle Brands",
+    "favoritePuzzleBrandsPlaceholder": "E.g. Educa, Ravensburger, Anatolian...",
+    "requiredDocuments": "4. Required Documents",
+    "photoLabel": "Passport Size Photo",
+    "photoDesc": "Please upload a clear passport photo taken within the last 6 months.",
+    "identityCardLabel": "Identity Card (Front)",
+    "identityCardDesc": "Please upload a legible photo of your ID for official procedures."
+  },
+  "contactForm": {
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "Your Full Name",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "example@email.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "subjectLabel": "Subject *",
+    "subjectPlaceholder": "Subject of your message",
+    "messageLabel": "Your Message *",
+    "messagePlaceholder": "Write your message here...",
+    "submitIdle": "Send Message",
+    "submitLoading": "Sending...",
+    "successTitle": "Message Sent!",
+    "successDesc": "We will get back to you as soon as possible.",
+    "successBtn": "Send another message →",
+    "errorDefault": "An unexpected error occurred."
   }
 }

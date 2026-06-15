@@ -180,7 +180,7 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
 
             {/* Section 3: Puzzle */}
             <section>
-              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">3. Puzzle Deneyimi</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">{t('puzzleExperience')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {isVisible('puzzleCount') && (
                   <div>
@@ -198,8 +198,8 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
                 )}
                 {isVisible('favoritePuzzleBrands') && (
                   <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Tercih Ettiğiniz Puzzle Markaları {isRequired('favoritePuzzleBrands') && '*'}</label>
-                  <textarea name="favoritePuzzleBrands" required={isRequired('favoritePuzzleBrands')} rows={2} placeholder="Örn: Educa, Ravensburger, Anatolian..." className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none resize-y"></textarea>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('favoritePuzzleBrandsLabel')} {isRequired('favoritePuzzleBrands') && '*'}</label>
+                  <textarea name="favoritePuzzleBrands" required={isRequired('favoritePuzzleBrands')} rows={2} placeholder={t('favoritePuzzleBrandsPlaceholder')} className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none resize-y"></textarea>
                 </div>
                 )}
               </div>
@@ -207,18 +207,18 @@ export default function UyelikClientForm({ title, subtitle, formSettings }: { ti
 
             {/* Section 4: Dosya Yüklemeleri */}
             <section>
-              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">4. Gerekli Belgeler</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b border-slate-200">{t('requiredDocuments')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {isVisible('photo') && (
                   <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Vesikalık Fotoğraf {isRequired('photo') && '*'}</label>
-                  <p className="text-xs text-slate-500 mb-2">Lütfen son 6 ay içinde çekilmiş net bir vesikalık fotoğraf yükleyin.</p>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('photoLabel')} {isRequired('photo') && '*'}</label>
+                  <p className="text-xs text-slate-500 mb-2">{t('photoDesc')}</p>
                   <input type="file" name="photo" required={isRequired('photo')} accept="image/*" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
                 </div>
                 )}
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Kimlik Görüntüsü (Ön Yüz) {isRequired('identityCard') && '*'}</label>
-                  <p className="text-xs text-slate-500 mb-2">Resmi işlemler için kimlik belgenizin okunaklı bir fotoğrafını yükleyin.</p>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">{t('identityCardLabel')} {isRequired('identityCard') && '*'}</label>
+                  <p className="text-xs text-slate-500 mb-2">{t('identityCardDesc')}</p>
                   <input type="file" name="identityCard" required={isRequired('identityCard')} accept="image/*,application/pdf" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all outline-none bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100" />
                 </div>
               </div>

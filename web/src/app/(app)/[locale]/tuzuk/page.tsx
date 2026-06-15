@@ -3,7 +3,7 @@ import { tuzukData } from './tuzukData';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import { Fragment } from 'react';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Dernek Tüzüğü | Puzzle Derneği',
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 export default async function Tuzuk(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const payload = await getPayload({ config: configPromise });
   const bylawsPage = await payload.findGlobal({
     slug: 'bylawsPage',

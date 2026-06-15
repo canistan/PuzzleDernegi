@@ -42,10 +42,7 @@ export default function LanguageSwitcher() {
       pathWithoutLocale = '/';
     }
 
-    // For default locale 'tr', next-intl might not want the prefix if as-needed
-    const newPath = nextLocale === 'tr' 
-      ? pathWithoutLocale 
-      : `/${nextLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
+    const newPath = `/${nextLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
 
     startTransition(() => {
       window.location.href = newPath;

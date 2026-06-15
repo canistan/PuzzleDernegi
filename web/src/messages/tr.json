@@ -29,7 +29,8 @@
   "gallery": {
     "noAlbums": "Henüz albüm bulunmamaktadır.",
     "noPhotos": "Bu albümde henüz fotoğraf bulunmuyor.",
-    "photos": "Fotoğraf"
+    "photos": "Fotoğraf",
+    "all": "Tümü"
   },
   "competitions": {
     "noData": "Geçmiş yarışma verileri henüz panele eklenmemiş."
@@ -109,6 +110,32 @@
     "no": "Hayır",
     "declaration1": "Dernek tüzüğünü okudum ve kabul ediyorum.",
     "declaration2": "Kişisel verilerimin işlenmesine izin veriyorum.",
-    "submit": "Başvuruyu Tamamla"
+    "submit": "Başvuruyu Tamamla",
+    "puzzleExperience": "3. Puzzle Deneyimi",
+    "favoritePuzzleBrandsLabel": "Tercih Ettiğiniz Puzzle Markaları",
+    "favoritePuzzleBrandsPlaceholder": "Örn: Educa, Ravensburger, Anatolian...",
+    "requiredDocuments": "4. Gerekli Belgeler",
+    "photoLabel": "Vesikalık Fotoğraf",
+    "photoDesc": "Lütfen son 6 ay içinde çekilmiş net bir vesikalık fotoğraf yükleyin.",
+    "identityCardLabel": "Kimlik Görüntüsü (Ön Yüz)",
+    "identityCardDesc": "Resmi işlemler için kimlik belgenizin okunaklı bir fotoğrafını yükleyin."
+  },
+  "contactForm": {
+    "nameLabel": "Ad Soyad *",
+    "namePlaceholder": "Adınız Soyadınız",
+    "emailLabel": "E-Posta *",
+    "emailPlaceholder": "ornek@email.com",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "(5XX) XXX XX XX",
+    "subjectLabel": "Konu *",
+    "subjectPlaceholder": "Mesajınızın konusu",
+    "messageLabel": "Mesajınız *",
+    "messagePlaceholder": "Mesajınızı buraya yazabilirsiniz...",
+    "submitIdle": "Mesajı Gönder",
+    "submitLoading": "Gönderiliyor...",
+    "successTitle": "Mesajınız Gönderildi!",
+    "successDesc": "En kısa sürede size dönüş yapacağız.",
+    "successBtn": "Yeni mesaj gönder →",
+    "errorDefault": "Beklenmeyen bir hata oluştu."
   }
 }

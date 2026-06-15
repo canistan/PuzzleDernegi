@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Uyelik(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const payload = await getPayload({ config: configPromise });
   const membershipPage = await payload.findGlobal({
     slug: 'membershipPage',

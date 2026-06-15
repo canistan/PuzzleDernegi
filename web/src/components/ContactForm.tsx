@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function ContactForm() {
+  const t = useTranslations('contactForm');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,14 +35,14 @@ export default function ContactForm() {
 
       if (!res.ok) {
         const errorData = await res.json();
-        throw new Error(errorData.error || 'Mesajınız gönderilemedi.');
+        throw new Error(errorData.error || t('errorDefault'));
       }
 
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     } catch (err: any) {
       setStatus('error');
-      setErrorMessage(err.message || 'Beklenmeyen bir hata oluştu.');
+      setErrorMessage(err.message || t('errorDefault'));
     }
   };
 
@@ -52,13 +54,13 @@ export default function ContactForm() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-slate-800 mb-2">Mesajınız Gönderildi!</h3>
-        <p className="text-slate-500">En kısa sürede size dönüş yapacağız.</p>
+        <h3 className="text-xl font-bold text-slate-800 mb-2">{t('successTitle')}</h3>
+        <p className="text-slate-500">{t('successDesc')}</p>
         <button
           onClick={() => setStatus('idle')}
           className="mt-6 text-sm font-medium text-orange-500 hover:text-orange-600 transition-colors"
         >
-          Yeni mesaj gönder →
+          {t('successBtn')}
         </button>
       </div>
     );
@@ -74,27 +76,27 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Ad Soyad *</label>
+          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">{t('nameLabel')}</label>
           <input 
             type="text" 
             name="name" 
             value={formData.name} 
             onChange={handleChange} 
             required 
-            placeholder="Adınız Soyadınız"
+            placeholder={t('namePlaceholder')}
             disabled={status === 'loading'}
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-orange-400/30 focus:border-orange-400 transition-all outline-none text-slate-800 placeholder:text-slate-300" 
           />
         </div>
         <div>
-          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">E-Posta *</label>
+          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">{t('emailLabel')}</label>
           <input 
             type="email" 
             name="email" 
             value={formData.email} 
             onChange={handleChange} 
             required 
-            placeholder="ornek@email.com"
+            placeholder={t('emailPlaceholder')}
             disabled={status === 'loading'}
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-orange-400/30 focus:border-orange-400 transition-all outline-none text-slate-800 placeholder:text-slate-300" 
           />
@@ -103,26 +105,26 @@ export default function ContactForm() {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Telefon</label>
+          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">{t('phoneLabel')}</label>
           <input 
             type="tel" 
             name="phone" 
             value={formData.phone} 
             onChange={handleChange} 
-            placeholder="(5XX) XXX XX XX"
+            placeholder={t('phonePlaceholder')}
             disabled={status === 'loading'}
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-orange-400/30 focus:border-orange-400 transition-all outline-none text-slate-800 placeholder:text-slate-300" 
           />
         </div>
         <div>
-          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Konu *</label>
+          <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">{t('subjectLabel')}</label>
           <input 
             type="text" 
             name="subject" 
             value={formData.subject} 
             onChange={handleChange} 
             required 
-            placeholder="Mesajınızın konusu"
+            placeholder={t('subjectPlaceholder')}
             disabled={status === 'loading'}
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-orange-400/30 focus:border-orange-400 transition-all outline-none text-slate-800 placeholder:text-slate-300" 
           />
@@ -130,14 +132,14 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Mesajınız *</label>
+        <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">{t('messageLabel')}</label>
         <textarea 
           name="message" 
           value={formData.message} 
           onChange={handleChange} 
           required 
           rows={5}
-          placeholder="Mesajınızı buraya yazabilirsiniz..."
+          placeholder={t('messagePlaceholder')}
           disabled={status === 'loading'}
           className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-orange-400/30 focus:border-orange-400 transition-all outline-none resize-none text-slate-800 placeholder:text-slate-300" 
         ></textarea>
@@ -154,12 +156,12 @@ export default function ContactForm() {
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
             </svg>
-            Gönderiliyor...
+            {t('submitLoading')}
           </>
         ) : (
           <>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
-            Mesajı Gönder
+            {t('submitIdle')}
           </>
         )}
       </button>

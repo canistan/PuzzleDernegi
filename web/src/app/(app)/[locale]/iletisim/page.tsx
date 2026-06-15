@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import ContactForm from '@/components/ContactForm';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'İletişim | Puzzle Derneği',
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Iletisim(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const payload = await getPayload({ config: configPromise });
   const t = await getTranslations('contact');
   

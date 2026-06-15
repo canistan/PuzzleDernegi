@@ -2,10 +2,11 @@ import Link from 'next/link';
 import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const payload = await getPayload({ config: configPromise });
   const t = await getTranslations('home');
   let homePage: any = null;

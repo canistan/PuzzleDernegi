@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -22,6 +24,7 @@ export default function AlbumClient({ images, albums = [] }: { images: AlbumImag
   const [activeAlbum, setActiveAlbum] = useState<string>('all');
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  const t = useTranslations('gallery');
 
   const filteredImages = activeAlbum === 'all' 
     ? images 
@@ -40,7 +43,7 @@ export default function AlbumClient({ images, albums = [] }: { images: AlbumImag
                 : 'bg-white text-slate-600 border border-slate-200 hover:border-orange-300 hover:text-[#FF6B35]'
             }`}
           >
-            Tümü
+            {t('all')}
           </button>
           {albums.map((album) => (
             <button
@@ -85,7 +88,7 @@ export default function AlbumClient({ images, albums = [] }: { images: AlbumImag
         </div>
       ) : (
         <div className="text-center text-slate-500 py-12">
-          Bu albümde henüz görsel bulunmuyor.
+          {t('noPhotos')}
         </div>
       )}
 

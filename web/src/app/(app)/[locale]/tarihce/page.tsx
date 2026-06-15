@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { getPayload } from 'payload';
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Tarihce(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const payload = await getPayload({ config: configPromise });
   let historyPage: any = null;
   

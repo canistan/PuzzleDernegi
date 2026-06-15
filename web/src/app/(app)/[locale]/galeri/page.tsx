@@ -3,16 +3,16 @@ import { getPayload } from 'payload';
 import configPromise from '@payload-config';
 import Link from 'next/link';
 import AlbumClient from './[id]/AlbumClient';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Galeri Albümleri | Puzzle Derneği',
 };
 
-export const dynamic = 'force-dynamic';
 
 export default async function Galeri(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const payload = await getPayload({ config: configPromise });
   const galleryPage = await payload.findGlobal({
     slug: 'gallerySettings',
