@@ -53,5 +53,10 @@
     "about1": "Organized under the leadership of the Puzzle Association (YAPBOZ DERNEĞİ), the European Puzzle Championship brings together hundreds of puzzle enthusiasts every year. Test your speed, show your skills and win surprise awards in exciting competitions held in individual and team categories!",
     "about2": "You can visit our official ticketing page from the 'Register for Competition' button above to get information about the rules, scoring system and detailed competition program.",
     "sponsorsTitle": "Sponsors"
+  },
+  "cookieBanner": {
+    "text": "We use cookies to improve your experience and ensure our site works efficiently. You can review our cookie usage and <link>Privacy Policy</link>. You can reject non-essential cookies.",
+    "accept": "Accept",
+    "reject": "Reject"
   }
 }

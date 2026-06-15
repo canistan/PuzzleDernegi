@@ -53,5 +53,10 @@
     "about1": "Türkiye Puzzle Derneği (YAPBOZ DERNEĞİ) öncülüğünde düzenlenen Avrupa Puzzle Şampiyonası, her yıl yüzlerce puzzle tutkununu bir araya getiriyor. Bireysel ve takım kategorilerinde düzenlenen heyecan dolu yarışmalarda hızınızı test edin, yeteneklerinizi sergileyin ve sürpriz ödülleri kazanın!",
     "about2": "Kurallar, puanlama sistemi ve detaylı yarışma programı hakkında bilgi almak için yukarıdaki 'Yarışmaya Kayıt Ol' butonundan resmi biletleme sayfamızı ziyaret edebilirsiniz.",
     "sponsorsTitle": "Sponsorlar"
+  },
+  "cookieBanner": {
+    "text": "Deneyiminizi geliştirmek ve sitemizin verimli çalışmasını sağlamak amacıyla çerezler (cookies) kullanmaktayız. Çerez kullanımını ve <link>KVKK Aydınlatma Metnimizi</link> inceleyebilirsiniz. Zorunlu olmayan çerezleri reddedebilirsiniz.",
+    "accept": "Kabul Et",
+    "reject": "Reddet"
   }
 }
