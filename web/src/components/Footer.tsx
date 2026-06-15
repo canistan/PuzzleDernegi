@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import NewsletterForm from './NewsletterForm';
 import CookieSettingsLink from './CookieSettingsLink';
 import { useLocale, useTranslations } from 'next-intl';
@@ -14,6 +15,14 @@ export default function Footer() {
           
           {/* Brand */}
           <div>
+            <Image 
+              src="/images/logo-icon.png" 
+              alt="Puzzle Derneği Icon" 
+              width={56} 
+              height={56} 
+              className="mb-4"
+              style={{ objectFit: 'contain' }}
+            />
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Puzzle Derneği</h3>
             <p style={{ color: '#94A3B8', lineHeight: 1.7, fontSize: '0.95rem' }}>
               {t('footerDescription')}

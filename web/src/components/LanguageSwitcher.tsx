@@ -12,7 +12,17 @@ const LOCALES = [
   { code: 'ru', label: 'RU', flag: '🇷🇺' },
 ];
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  className?: string;
+  dropdownAlign?: 'left' | 'right';
+  direction?: 'up' | 'down';
+}
+
+export default function LanguageSwitcher({ 
+  className = "ml-4", 
+  dropdownAlign = "right", 
+  direction = "down" 
+}: LanguageSwitcherProps) {
   const [isPending, startTransition] = useTransition();
   const locale = useLocale();
   const router = useRouter();
@@ -52,7 +62,7 @@ export default function LanguageSwitcher() {
   const currentLocale = LOCALES.find(l => l.code === locale) || LOCALES[0];
 
   return (
-    <div className="relative ml-4" ref={dropdownRef}>
+    <div className={`relative ${className}`} ref={dropdownRef}>
       <button 
         onClick={() => setIsOpen(!isOpen)}
         disabled={isPending}
@@ -64,7 +74,7 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-32 bg-white border border-slate-200 rounded-lg shadow-lg z-50 overflow-hidden py-1">
+        <div className={`absolute ${dropdownAlign === 'right' ? 'right-0' : 'left-0'} ${direction === 'up' ? 'bottom-full mb-2' : 'top-full mt-2'} w-32 bg-white border border-slate-200 rounded-lg shadow-lg z-50 overflow-hidden py-1`}>
           {LOCALES.map((l) => (
             <button
               key={l.code}

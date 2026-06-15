@@ -74,7 +74,17 @@ export default function Navbar() {
       {/* Mobile Overlay Menu */}
       <div className={`mobile-menu ${isOpen ? 'mobile-menu--open' : ''}`} id="mobile-menu">
         <nav className="mobile-menu__nav">
-          <ul className="mobile-menu__links">
+          <div>
+            <div className="flex justify-center mb-8">
+              <Image 
+                src="/images/logo-icon.png" 
+                alt="Puzzle Derneği Icon" 
+                width={72} 
+                height={72} 
+                className="object-contain"
+              />
+            </div>
+            <ul className="mobile-menu__links">
             {navItems.map((item, i) => (
               <li key={item.href} style={{ animationDelay: `${i * 0.05}s` }}>
                 <Link href={item.href} onClick={closeMenu}>
@@ -82,9 +92,10 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-          </ul>
+            </ul>
+          </div>
           <div className="mobile-menu__footer">
-            <LanguageSwitcher />
+            <LanguageSwitcher className="" dropdownAlign="left" direction="up" />
           </div>
         </nav>
       </div>
