@@ -44,10 +44,10 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
       {/* Main Content */}
       <section className="container">
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             
-            {/* Left: Contact Form (wider) */}
-            <div className="card" style={{ gridColumn: '1 / -1' }}>
+            {/* Left: Contact Form */}
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 hover:shadow-xl transition-all duration-300">
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FF8E53] flex items-center justify-center shadow-lg shadow-orange-500/20">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
@@ -61,11 +61,11 @@ export default async function Iletisim(props: { params: Promise<{ locale: string
             </div>
 
             {/* Right: Info Cards */}
-            <div className="lg:col-span-2 flex flex-col gap-6">
+            <div className="flex flex-col gap-6">
               
               {/* Combined Contact Info Card */}
               <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-xl font-bold text-slate-800 mb-6">{t('contactAndSocial') || 'İletişim Bilgileri'}</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-6">{t.has?.('contactAndSocial') ? t('contactAndSocial') : 'İletişim Bilgileri'}</h3>
                 
                 <div className="flex flex-col gap-6">
                   {/* Address */}
