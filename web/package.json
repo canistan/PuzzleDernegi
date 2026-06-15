@@ -20,7 +20,7 @@
     "payload": "^3.85.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sharp": "^0.35.1",
+    "sharp": "0.32.6",
     "translate": "^3.0.1",
     "yet-another-react-lightbox": "^3.32.0"
   },
