@@ -13,7 +13,7 @@ export const translateJSON = async (
     return data;
   }
 
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   // Map language codes to names for the prompt
   const langMap: Record<string, string> = {
