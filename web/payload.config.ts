@@ -951,10 +951,7 @@ export default buildConfig({
           type: 'text',
           label: 'X (Twitter) Linki',
         }
-      ]
-    }
-  ],
-  secret: process.env.PAYLOAD_SECRET || 'SOME_SECRET_KEY',
+undefined process.env.PAYLOAD_SECRET || 'SOME_SECRET_KEY',
   db: mongooseAdapter({
     url: process.env.MONGODB_URI || '',
   }),
