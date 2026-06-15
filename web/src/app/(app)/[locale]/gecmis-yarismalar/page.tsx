@@ -94,19 +94,19 @@ export default async function GecmisYarismalar(props: { params: Promise<{ locale
                 )}
 
                 {comp.type === 'winners' && (
-                  <div style={{ textAlign: 'center' }}>
+                  <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     {comp.winnersList && comp.winnersList.length > 0 && (
-                      <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.4rem', color: '#334155' }}>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', color: '#334155' }}>
                         {comp.winnersList.map((w: any, wIndex: number) => (
-                          <li key={wIndex} style={{ fontSize: '0.95rem' }}>{w.name}</li>
+                          <li key={wIndex} style={{ fontSize: '0.95rem', textAlign: 'center' }}>{w.name}</li>
                         ))}
                       </ul>
                     )}
                     
                     {comp.specialAwards && comp.specialAwards.length > 0 && (
-                      <div style={{ marginTop: '1.25rem' }}>
+                      <div style={{ marginTop: '1.25rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         {comp.specialAwards.map((s: any, sIndex: number) => (
-                          <div key={sIndex} style={{ marginBottom: '1rem' }}>
+                          <div key={sIndex} style={{ marginBottom: '1rem', textAlign: 'center' }}>
                             <h3 style={{ color: '#FF6B35', fontSize: '1.1rem', marginBottom: '0.25rem' }}>{s.awardName}</h3>
                             <div style={{ color: '#334155', fontSize: '0.95rem' }}>
                               {s.winner}
